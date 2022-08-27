@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 
 import api from '../../api'
 import { User as UserFromAPI, Params as APIParams } from "../../api/randomUser/randomUser.api.types";
+import Button from '../../components/Button';
 import DriverCard from '../../components/DriverCard';
 import { User } from '../../index.types';
 import { SetUsers } from './DriverManagement.component.types';
@@ -45,6 +46,9 @@ const DriverManagement: NextPage = (props) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <p>driver management page</p>
+      <Button>
+        Tambah Driver
+      </Button>
       {users.map(user=>(<DriverCard user={user}/>))}
     </div>
   )
