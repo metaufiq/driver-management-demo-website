@@ -34,6 +34,13 @@ const DriverManagement: NextPage = (props) => {
       <Button>
         Tambah Driver
       </Button>
+      <br/>
+      <Button>
+        Prev Page
+      </Button>
+      <Button>
+        Next Page
+      </Button>
       {users.map(user=>(<DriverCard user={user}/>))}
     </div>
   )
