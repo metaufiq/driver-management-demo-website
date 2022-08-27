@@ -1,3 +1,3 @@
 import DriverManagement from "./DriverManagement.component";
 
-DriverManagement
+export default DriverManagement

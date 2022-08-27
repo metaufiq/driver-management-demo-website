@@ -6,5 +6,6 @@ export type FilterKey =  'firstName';
 export type Params = {
   initialValue: User[]
   searchInput?: string,
+  pageIndex: number
 }
 

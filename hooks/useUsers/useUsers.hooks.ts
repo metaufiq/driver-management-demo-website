@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { USER_PER_PAGE } from "../../constants";
 
 import { SetUsers, Users } from "../../index.types";
 import { User } from "../../index.types";
@@ -8,7 +9,7 @@ import { FilterKey, Params } from "./useUsers.hooks.types";
 const FILTER_KEYS:FilterKey[] = ["firstName"];
 const useInnit = (initialValue: Params['initialValue'], setUsers: SetUsers)=>{
   useEffect(()=>{
-    setUsers(initialValue)
+    setUsers(initialValue.slice(0,5))
   }, [initialValue]);
 }
 
@@ -24,14 +25,20 @@ const filterByKeys = (searchInput: string)=>(user:User) => {
 }
 
 const useSearch = ({searchInput, initialValue}: Params, setUsers: SetUsers)=>{
-
   useEffect(()=>{
-    
-    setUsers(users=> {
-      if (!searchInput) return initialValue
-      return users.filter(filterByKeys(searchInput))
-    })
+    const data = !searchInput ? initialValue : initialValue.filter(filterByKeys(searchInput));
+    setUsers(data.slice(0,5))
   }, [searchInput])
+}
+
+const usePage = ({pageIndex, initialValue}: Params, setUsers: SetUsers)=>{
+  const sliceForm = (pageIndex-1)*USER_PER_PAGE-1;
+  const sliceEnd = pageIndex*USER_PER_PAGE;
+  useEffect(()=>{
+    const newUsers = initialValue.slice(sliceForm, sliceEnd);
+    
+    setUsers(newUsers)
+  }, [pageIndex])
 }
 
 const useUsers = (params: Params)=>{
@@ -39,6 +46,7 @@ const useUsers = (params: Params)=>{
 
   useInnit(params.initialValue, setUsers)
   useSearch(params, setUsers)
+  usePage(params, setUsers)
 
   return {users}
 }
