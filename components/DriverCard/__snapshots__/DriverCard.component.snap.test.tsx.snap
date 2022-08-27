@@ -3,77 +3,77 @@
 exports[`SeparatorLineSnapshot should render normal SeparatorLine 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bczRLJ kgXxny"
+    class="sc-gsnTZi ibsClc"
   >
     <div
-      class="sc-jSMfEi bHgSAa"
+      class="sc-gKXOVf eeoQmn"
     >
       <p
-        class="sc-gsnTZi sc-hKMtZM FhkDi hMKTSP"
+        class="sc-dkzDqf sc-eCYdqJ bkDjgV dXOCom"
       >
         Driver ID
       </p>
       <p
-        class="sc-dkzDqf sc-eCYdqJ gooZIA cGheFb"
+        class="sc-hKMtZM sc-jSMfEi fcOyIX dxkYAl"
       >
         USERNAME
       </p>
     </div>
     <img
-      class="sc-papXJ exbFeb"
+      class="sc-bczRLJ hLfesy"
     />
     <div
-      class="sc-ftvSup ixLwpx"
+      class="sc-papXJ golmVw"
     >
       <p
-        class="sc-gsnTZi sc-gKXOVf FhkDi fRINSj"
+        class="sc-dkzDqf sc-iBkjds bkDjgV fKeUBJ"
       >
         Nama Driver
       </p>
       <p
-        class="sc-iBkjds foQcVD"
+        class="sc-ftvSup ylCRk"
       >
         firstName, lastName
       </p>
     </div>
     <div
-      class="sc-ftvSup ixLwpx"
+      class="sc-papXJ golmVw"
     >
       <p
-        class="sc-gsnTZi sc-gKXOVf FhkDi fRINSj"
+        class="sc-dkzDqf sc-iBkjds bkDjgV fKeUBJ"
       >
         Telepon
       </p>
       <p
-        class="sc-iBkjds foQcVD"
+        class="sc-ftvSup ylCRk"
       >
         098123123123
       </p>
     </div>
     <div
-      class="sc-ftvSup ixLwpx"
+      class="sc-papXJ golmVw"
     >
       <p
-        class="sc-gsnTZi sc-gKXOVf FhkDi fRINSj"
+        class="sc-dkzDqf sc-iBkjds bkDjgV fKeUBJ"
       >
         Email
       </p>
       <p
-        class="sc-iBkjds foQcVD"
+        class="sc-ftvSup ylCRk"
       >
         email@email.com
       </p>
     </div>
     <div
-      class="sc-ftvSup ixLwpx"
+      class="sc-papXJ golmVw"
     >
       <p
-        class="sc-gsnTZi sc-gKXOVf FhkDi fRINSj"
+        class="sc-dkzDqf sc-iBkjds bkDjgV fKeUBJ"
       >
         Tanggal Lahir
       </p>
       <p
-        class="sc-iBkjds foQcVD"
+        class="sc-ftvSup ylCRk"
       >
         12/10/1998
       </p>

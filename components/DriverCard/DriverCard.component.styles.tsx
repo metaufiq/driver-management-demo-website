@@ -39,8 +39,3 @@ export const ContentContainer = styled.div`
   padding: 0.5rem 1rem;
 `
 
-export const Avatar = styled.img`
-  border-radius: 50%;
-  padding: 1rem;
-`
-

@@ -1,5 +1,6 @@
 import { Component } from "../../index.types";
-import { Avatar, Container, ContentContainer, Description, DriverIDContainer, DriverIDTitle, DriverIDValue, GrayText, PrimaryText, Title } from "./DriverCard.component.styles";
+import Avatar from "../Avatar";
+import { Container, ContentContainer, Description, DriverIDContainer, DriverIDTitle, DriverIDValue, GrayText, PrimaryText, Title } from "./DriverCard.component.styles";
 
 import { Props } from "./DriverCard.component.types";
 
