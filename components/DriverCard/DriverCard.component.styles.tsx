@@ -7,7 +7,7 @@ export const Container = styled.div`
 
 export const Title = styled.p`
   color: #c6c6c6;
-  font-size: 12px;
+  font-size: 0.75rem;
   margin: 0;
 `
 
