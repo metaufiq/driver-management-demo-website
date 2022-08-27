@@ -1,12 +1,26 @@
 import { useState } from 'react'
 import {TiHome} from 'react-icons/ti'
 import {RiCalendar2Fill} from 'react-icons/ri'
-import {FaUserCircle, FaBars, FaTimes} from 'react-icons/fa'
+import {FaUserCircle, FaBars} from 'react-icons/fa'
 
 import { Component } from '../../index.types'
-import { ChildContainer, ContentContainer, InlineText, MenuIconClose, MenuIconOpen, MenuItemLinks, MenuItems, Navbar, SidebarMenu, UserName } from './SideBar.component.styles'
+import { 
+  ChildContainer,
+  ContentContainer, 
+  InlineText, 
+  MenuIconClose, 
+  MenuIconOpen, 
+  MenuItemLinks, 
+  MenuItems, 
+  Navbar, 
+  SidebarMenu, 
+  UserContainer, 
+  UserName 
+} from './SideBar.component.styles'
 import { useRouter } from 'next/router'
 import { Props } from './SideBar.component.types'
+import Avatar from '../Avatar'
+import { USER_AVATAR_URL } from '../../constants'
 
 export const SidebarData = [
   {
@@ -41,10 +55,15 @@ const Sidebar: Component<Props> = (props) => {
                 >
                     {close &&  <FaBars /> }
                 </MenuIconOpen>
-                <div>
+                <UserContainer>
                   <InlineText>Hello,</InlineText>
                   <UserName>Shipper User</UserName>
-                </div>
+                  <Avatar 
+                    src={USER_AVATAR_URL}
+                    height={'30%'}
+                    width={'30%'}
+                  />
+                </UserContainer>
             </Navbar>
 
             <ContentContainer>

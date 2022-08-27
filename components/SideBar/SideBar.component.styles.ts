@@ -31,6 +31,13 @@ export const MenuIconOpen = styled.a<{close: boolean}>`
     }
 `
 
+export const UserContainer = styled.div`
+  align-items: center;
+  justify-content: flex-end;
+  display: flex;
+  flex-direction: row;
+`
+
 export const MenuIconClose = styled.a`
     display: flex;
     justify-content: end;
