@@ -33,7 +33,7 @@ const useSearch = ({searchInput, initialValue}: Params, setUsers: SetUsers)=>{
 
 const usePage = ({pageIndex, initialValue}: Params, setUsers: SetUsers)=>{
   const sliceForm = (pageIndex-1)*USER_PER_PAGE-1;
-  const sliceEnd = pageIndex*USER_PER_PAGE;
+  const sliceEnd = pageIndex*USER_PER_PAGE-1;
   useEffect(()=>{
     const newUsers = initialValue.slice(sliceForm, sliceEnd);
     
