@@ -4,8 +4,9 @@ import {RiCalendar2Fill} from 'react-icons/ri'
 import {FaUserCircle, FaBars, FaTimes} from 'react-icons/fa'
 
 import { Component } from '../../index.types'
-import { InlineText, MenuIconClose, MenuIconOpen, MenuItemLinks, MenuItems, Navbar, SidebarMenu, UserName } from './SideBar.component.styles'
+import { ChildContainer, ContentContainer, InlineText, MenuIconClose, MenuIconOpen, MenuItemLinks, MenuItems, Navbar, SidebarMenu, UserName } from './SideBar.component.styles'
 import { useRouter } from 'next/router'
+import { Props } from './SideBar.component.types'
 
 export const SidebarData = [
   {
@@ -25,7 +26,7 @@ export const SidebarData = [
   },
 ]
 
-const Sidebar: Component<any> = () => {
+const Sidebar: Component<Props> = (props) => {
     const router = useRouter()
     const [close, setClose] = useState(false)
     
@@ -33,8 +34,12 @@ const Sidebar: Component<any> = () => {
     return (
         <>
             <Navbar>
-                <MenuIconOpen href="#" onClick={showSidebar}>
-                    <FaBars />
+                <MenuIconOpen 
+                  close={close} 
+                  href="#" 
+                  onClick={showSidebar}
+                >
+                    {close &&  <FaBars /> }
                 </MenuIconOpen>
                 <div>
                   <InlineText>Hello,</InlineText>
@@ -42,22 +47,26 @@ const Sidebar: Component<any> = () => {
                 </div>
             </Navbar>
 
-            <SidebarMenu close={close}>
+            <ContentContainer>
+              <SidebarMenu close={close}>
                 <MenuIconClose href="#" onClick={showSidebar}>
-                    <FaTimes />
+                    Close
                 </MenuIconClose>
-
-                {SidebarData.map((item, index) => {
-                    return (
-                        <MenuItems key={index} active={router.route === item.path}>
-                            <MenuItemLinks href={item.path}>
-                                {item.icon}
-                                <span style={{marginLeft: '16px'}}>{item.title}</span>
-                            </MenuItemLinks>
-                        </MenuItems>
-                    )
-                })}
-            </SidebarMenu>
+                  {SidebarData.map((item, index) => {
+                      return (
+                          <MenuItems key={index} active={router.route === item.path}>
+                              <MenuItemLinks href={item.path}>
+                                  {item.icon}
+                                  <span style={{marginLeft: '16px'}}>{item.title}</span>
+                              </MenuItemLinks>
+                          </MenuItems>
+                      )
+                  })}
+              </SidebarMenu>
+              <ChildContainer>
+                {props.children}
+              </ChildContainer>
+            </ContentContainer>
         </>
     )
 }

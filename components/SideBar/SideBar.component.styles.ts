@@ -7,6 +7,9 @@ export const Navbar = styled.div`
     height: 3.5rem;
     margin: 0 2rem;
     background-color: white;
+    @media (min-width: 768px) {
+      justify-content: flex-end;
+    }
 `
 
 export const InlineText = styled.p`
@@ -18,30 +21,37 @@ export const UserName = styled(InlineText)`
   margin-left: 0.3rem;
 `
 
-export const MenuIconOpen = styled.a`
+export const MenuIconOpen = styled.a<{close: boolean}>`
     display: flex;
     justify-content: start;
     font-size: 1.5rem;
     color: #ff453b;
+    @media (min-width: 768px) {
+      display: none;
+    }
 `
 
 export const MenuIconClose = styled.a`
     display: flex;
     justify-content: end;
-    font-size: 1.5rem;
+    font-size: 0.8rem;
     margin-top: 0.75rem;
     margin-right: 1rem;
     color: #ff453b;
+    @media (min-width: 768px) {
+      display: none;
+    }
 `
 
 export const SidebarMenu = styled.div<{close: boolean}>`
     width: 250px;
     height: 100vh;
     background-color: white;
-    position: fixed;
-    top: 0;
-    left: ${({ close}) => close ? '0' : '-100%'};
-    transition: .6s;
+    @media (max-width: 768px) {
+      width: 100%;
+      max-height: ${({close}) => close ? 0 : '200px'};
+      transition: all 0.3s ease-out;
+    }
 `
 
 export const MenuItems = styled.li<{active:boolean}>`
@@ -50,7 +60,7 @@ export const MenuItems = styled.li<{active:boolean}>`
     align-items: center;
     justify-content: start;
     width: 100%;
-    padding: 1rem 0 1.25rem;
+    padding: 1rem 0;
     border-left: ${({active }) => active ? '4px solid #ff453b' : '0'};
 `
 
@@ -67,4 +77,17 @@ export const MenuItemLinks = styled.a`
     &:hover {
         color: #ff453b;
     }
+`
+
+export const ContentContainer = styled.div`
+  display: flex;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+`
+
+export const ChildContainer = styled.div`
+  padding: 0;
+
 `
