@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
+import { FaSearch } from 'react-icons/fa';
 
 import Button from '../../components/Button';
 import DriverCard from '../../components/DriverCard';
@@ -46,6 +47,7 @@ const DriverManagement: NextPage = (props) => {
             placeholder='Cari Driver'
             onChange={_onInputSearch(setSearchInput)}
             type='text'
+            leftIcon={<FaSearch/>}
           />
           <Button type='PRIMARY'>
             TAMBAH DRIVER
