@@ -7,6 +7,7 @@ export const Container = styled.div`
 
 export const HeaderContainer = styled.div`
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   border-radius: 0.125rem;
@@ -27,7 +28,9 @@ export const HeaderDescription = styled.p`
 export const ListUserContainer = styled.div`
   flex-direction: row;
   display: flex;
-  column-gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
   background-color: #fafafa;
   padding: 2rem 0;
 `
