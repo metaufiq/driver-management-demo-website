@@ -9,5 +9,12 @@ export const ListUserContainer = styled.div`
   display: flex;
   column-gap: 1rem;
   background-color: #fafafa;
-  height: 20px;
+  padding: 2rem;
+`
+
+export const PaginationContainer = styled.div`
+  display: flex;
+  column-gap: 1rem;
+  padding: 2rem;
+  justify-content: center;
 `
