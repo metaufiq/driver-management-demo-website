@@ -9,6 +9,10 @@ export type User = {
   phone: string
 }
 
+export type Users = User[]
+
 export type SetState<T> = React.Dispatch<React.SetStateAction<T>>;
+export type SetUsers = SetState<Users>
+
 
 export type Component<Props> = NextComponentType<NextPageContext, {}, Props>
