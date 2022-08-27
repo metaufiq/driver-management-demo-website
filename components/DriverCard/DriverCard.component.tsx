@@ -1,11 +1,16 @@
 import { Component } from "../../index.types";
-import { Container, ContentContainer, Description, Title } from "./DriverCard.component.styles";
+import { Avatar, Container, ContentContainer, Description, Title } from "./DriverCard.component.styles";
 
 import { Props } from "./DriverCard.component.types";
 
 const DriverCard:Component<Props> = ({user})=>{
   return(
   <Container>
+    <ContentContainer>
+      <Avatar
+        src={user.profilePicture}
+      />
+    </ContentContainer>
     <ContentContainer>
       <Title>Nama Driver</Title>
       <Description>{user.firstName}, {user.lastName}</Description>

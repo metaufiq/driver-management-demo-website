@@ -10,7 +10,12 @@ export type User = {
   dob: {
     date: string
   },
-  phone: string
+  phone: string,
+  picture: {
+    large: string,
+    medium: string,
+    thumbnail: string
+  }
 }
 
 export type GetListUserResponses = {

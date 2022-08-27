@@ -10,7 +10,8 @@ const _convertUserToUserState = (user: UserFromAPI):User => ({
   firstName: user.name.first,
   lastName: user.name.last,
   username: user.login.username,
-  phone: user.phone
+  phone: user.phone,
+  profilePicture: user.picture.medium
 })
 
 const _getListUser = async (params: APIParams):Promise<Users> => {

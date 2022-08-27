@@ -6,7 +6,8 @@ export type User = {
   lastName: string,
   email: string,
   dob: string,
-  phone: string
+  phone: string,
+  profilePicture: string
 }
 
 export type Users = User[]

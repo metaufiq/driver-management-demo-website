@@ -19,3 +19,8 @@ export const Description = styled.p`
 export const ContentContainer = styled.div`
   padding: 0.5rem 0;
 `
+
+export const Avatar = styled.img`
+  border-radius: 50%;
+  padding: 0.5rem 0;
+`
