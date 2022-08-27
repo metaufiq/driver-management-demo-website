@@ -8,6 +8,8 @@ export const Container = styled.div`
 export const HeaderContainer = styled.div`
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  border-radius: 0.125rem;
   background-color: white;
   padding: 1rem;
 `
