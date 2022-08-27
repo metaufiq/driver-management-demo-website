@@ -1,4 +1,4 @@
-export type Type = 'PRIMARY' | 'SECONDARY'
+export type Type = 'PRIMARY' | 'SECONDARY' | 'NAVIGATION'
 
 export interface Props{
   children: JSX.Element | string,
