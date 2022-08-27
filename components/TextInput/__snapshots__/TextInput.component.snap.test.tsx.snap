@@ -2,21 +2,29 @@
 
 exports[`TextInputSnapshot should render normal TextInput 1`] = `
 <DocumentFragment>
-  <input
-    class="sc-bczRLJ gkCkmo"
-    id="id"
-    placeholder="placeholder"
-    type="password"
-  />
+  <div
+    class="sc-gsnTZi dtTrYC"
+  >
+    <input
+      class="sc-bczRLJ gBziFm"
+      id="id"
+      placeholder="placeholder"
+      type="password"
+    />
+  </div>
 </DocumentFragment>
 `;
 
 exports[`TextInputSnapshot should render normal TextInput without id 1`] = `
 <DocumentFragment>
-  <input
-    class="sc-bczRLJ gkCkmo"
-    placeholder="placeholder"
-    type="password"
-  />
+  <div
+    class="sc-gsnTZi dtTrYC"
+  >
+    <input
+      class="sc-bczRLJ gBziFm"
+      placeholder="placeholder"
+      type="password"
+    />
+  </div>
 </DocumentFragment>
 `;
