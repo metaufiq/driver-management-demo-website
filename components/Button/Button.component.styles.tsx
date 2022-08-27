@@ -14,5 +14,6 @@ export const PrimaryButton = styled(StyledButton)`
 `
 
 export const NavigationButton = styled(StyledButton)`
+  font-size: 1rem;
   background-color: transparent;
 `
