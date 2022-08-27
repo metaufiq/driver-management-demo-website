@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import Button from '../../components/Button';
 import DriverCard from '../../components/DriverCard';
@@ -8,7 +8,7 @@ import TextInput from '../../components/TextInput';
 import { PAGE } from '../../constants';
 import useUsers from '../../hooks/useUsers';
 import useUsersQuery from '../../hooks/useUsersQuery';
-import { Container } from './DriverManagement.component.styles';
+import { Container, ListUserContainer } from './DriverManagement.component.styles';
 import { SetPageIndex, SetSearchInput } from './DriverManagement.component.types';
 
 const _onInputSearch = (setSearchInput: SetSearchInput)=>(event: React.ChangeEvent<HTMLInputElement>)=>{
@@ -46,13 +46,18 @@ const DriverManagement: NextPage = (props) => {
         Tambah Driver
       </Button>
       <br/>
-      <Button onClick={_onPrevPage(setPageIndex)} disabled={pageIndex===1}>
-        Prev Page
-      </Button>
-      <Button onClick={_onNextPage(setPageIndex)} disabled={pageIndex===PAGE}>
-        Next Page
-      </Button>
-      {users.map(user=>(<DriverCard user={user} key={user.username}/>))}
+      <ListUserContainer>
+        <Button onClick={_onPrevPage(setPageIndex)} disabled={pageIndex===1}>
+          Prev Page
+        </Button>
+        <Button onClick={_onNextPage(setPageIndex)} disabled={pageIndex===PAGE}>
+          Next Page
+        </Button>
+      </ListUserContainer>
+
+      <ListUserContainer>
+        {users.map(user=>(<DriverCard user={user} key={user.username}/>))}
+      </ListUserContainer>
     </Container>
   )
 }
