@@ -1,5 +1,4 @@
 export type User = {
-  gender: string,
   name: {
     first: string,
     last: string
@@ -8,9 +7,10 @@ export type User = {
   login: {
     username: string,
   },
-  registered: {
+  dob: {
     date: string
   },
+  phone: string
 }
 
 export type GetListUserResponses = {
