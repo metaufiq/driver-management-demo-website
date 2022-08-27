@@ -25,6 +25,16 @@ export const HeaderDescription = styled.p`
   margin: 0;
 `
 
+export const HeaderUtilsContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex: 1;
+  @media (max-width: 768px) {
+      flex-direction: column;
+  }
+`
+
 export const ListUserContainer = styled.div`
   flex-direction: row;
   display: flex;

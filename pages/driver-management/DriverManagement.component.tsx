@@ -1,15 +1,17 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import { useState } from 'react';
-import { FaSearch } from 'react-icons/fa';
+import { FaChevronCircleLeft, FaSearch } from 'react-icons/fa';
+import { HiOutlinePlus } from 'react-icons/hi';
+import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 
-import Button from '../../components/Button';
+import { NavigationButton, PrimaryButton } from '../../components/Button';
 import DriverCard from '../../components/DriverCard';
 import TextInput from '../../components/TextInput';
 import { PAGE } from '../../constants';
 import useUsers from '../../hooks/useUsers';
 import useUsersQuery from '../../hooks/useUsersQuery';
-import { Container, HeaderContainer, HeaderDescription, HeaderTitle, ListUserContainer, PaginationContainer } from './DriverManagement.component.styles';
+import { Container, HeaderContainer, HeaderDescription, HeaderTitle, HeaderUtilsContainer, ListUserContainer, PaginationContainer } from './DriverManagement.component.styles';
 import { SetPageIndex, SetSearchInput } from './DriverManagement.component.types';
 
 const _onInputSearch = (setSearchInput: SetSearchInput)=>(event: React.ChangeEvent<HTMLInputElement>)=>{
@@ -42,17 +44,18 @@ const DriverManagement: NextPage = (props) => {
           <HeaderTitle>DRIVER MANAGEMENT</HeaderTitle>
           <HeaderDescription>Data Driver bekerja dengan Anda.</HeaderDescription>
         </div>
-        <div>
+        <HeaderUtilsContainer>
           <TextInput
             placeholder='Cari Driver'
             onChange={_onInputSearch(setSearchInput)}
             type='text'
             leftIcon={<FaSearch/>}
           />
-          <Button type='PRIMARY'>
-            TAMBAH DRIVER
-          </Button>
-        </div>
+          <PrimaryButton textAlign='start'>
+              TAMBAH DRIVER
+              <HiOutlinePlus/>
+          </PrimaryButton>
+        </HeaderUtilsContainer>
       </HeaderContainer>
 
       <br/>
@@ -61,12 +64,21 @@ const DriverManagement: NextPage = (props) => {
         {users.map(user=>(<DriverCard user={user} key={user.username}/>))}
       </ListUserContainer>
       <PaginationContainer>
-        <Button onClick={_onPrevPage(setPageIndex)} disabled={pageIndex===1} type='NAVIGATION'>
+        <NavigationButton 
+          onClick={_onPrevPage(setPageIndex)} 
+          disabled={pageIndex===1}
+        >
+          <FiChevronLeft/>
           Prev Page
-        </Button>
-        <Button onClick={_onNextPage(setPageIndex)} disabled={pageIndex===PAGE} type='NAVIGATION'>
+         
+        </NavigationButton>
+        <NavigationButton 
+          onClick={_onNextPage(setPageIndex)} 
+          disabled={pageIndex===PAGE}
+        >
           Next Page
-        </Button>
+          <FiChevronRight/>
+        </NavigationButton>
       </PaginationContainer>
     </Container>
   )
