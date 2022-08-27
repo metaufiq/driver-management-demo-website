@@ -1,42 +1,22 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
-import api from '../../api'
-import { User as UserFromAPI, Params as APIParams } from "../../api/randomUser/randomUser.api.types";
 import Button from '../../components/Button';
 import DriverCard from '../../components/DriverCard';
-import { User } from '../../index.types';
-import { SetUsers } from './DriverManagement.component.types';
+import TextInput from '../../components/TextInput';
+import useUsers from '../../hooks/useUsers';
+import useUsersQuery from '../../hooks/useUsersQuery';
+import { SetSearchInput } from './DriverManagement.component.types';
 
-const _convertUserToUserState = (user: UserFromAPI):User => ({
-  email: user.email,
-  dob: user.dob.date,
-  firstName: user.name.first,
-  lastName: user.name.last,
-  username: user.login.username,
-  phone: user.phone
-})
-
-const _getListUser = async (params: APIParams):Promise<User[]> => {
-  const {results} = await api.randomUser.getListUser(params)
-
-  const users = results.map(_convertUserToUserState)
-  return users;
-}
-
-const _asyncInnit = async (setUsers: SetUsers)=>{
-  const users = await _getListUser({results:30})
-
-  setUsers(users)
+const _onInputSearch = (setSearchInput: SetSearchInput)=>(event: React.ChangeEvent<HTMLInputElement>)=>{
+  setSearchInput(event.target.value)
 }
 
 const DriverManagement: NextPage = (props) => {
-  const [users, setUsers] = useState<User[]>([]);
-  
-  useEffect(()=>{
-    _asyncInnit(setUsers)
-  }, [])
+  const {users:initialValue} = useUsersQuery();
+  const [searchInput, setSearchInput]= useState<string>();
+  const {users} = useUsers({initialValue, searchInput})
 
   return (
     <div>
@@ -46,6 +26,11 @@ const DriverManagement: NextPage = (props) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <p>driver management page</p>
+      <TextInput
+        placeholder='Cari Driver'
+        onChange={_onInputSearch(setSearchInput)}
+        type='text'
+      />
       <Button>
         Tambah Driver
       </Button>

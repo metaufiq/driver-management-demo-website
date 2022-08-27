@@ -1,3 +1,3 @@
-import { SetState, User } from "../../index.types";
+import { SetState } from "../../index.types";
 
-export type SetUsers = SetState<User[]>
+export type SetSearchInput = SetState<string|undefined>
