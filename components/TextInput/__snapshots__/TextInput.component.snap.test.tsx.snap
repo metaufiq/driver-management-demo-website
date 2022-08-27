@@ -3,6 +3,7 @@
 exports[`TextInputSnapshot should render normal TextInput 1`] = `
 <DocumentFragment>
   <input
+    class="sc-bczRLJ gkCkmo"
     id="id"
     placeholder="placeholder"
     type="password"
@@ -13,6 +14,7 @@ exports[`TextInputSnapshot should render normal TextInput 1`] = `
 exports[`TextInputSnapshot should render normal TextInput without id 1`] = `
 <DocumentFragment>
   <input
+    class="sc-bczRLJ gkCkmo"
     placeholder="placeholder"
     type="password"
   />

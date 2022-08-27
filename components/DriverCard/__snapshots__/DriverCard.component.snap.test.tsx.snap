@@ -2,19 +2,82 @@
 
 exports[`SeparatorLineSnapshot should render normal SeparatorLine 1`] = `
 <DocumentFragment>
-  <div>
-    <p>
-      firstName, lastName
-    </p>
-    <p>
-      098123123123
-    </p>
-    <p>
-      email@email.com
-    </p>
-    <p>
-      12/10/1998
-    </p>
+  <div
+    class="sc-bczRLJ kgXxny"
+  >
+    <div
+      class="sc-jSMfEi bHgSAa"
+    >
+      <p
+        class="sc-gsnTZi sc-hKMtZM FhkDi hMKTSP"
+      >
+        Driver ID
+      </p>
+      <p
+        class="sc-dkzDqf sc-eCYdqJ gooZIA cGheFb"
+      >
+        USERNAME
+      </p>
+    </div>
+    <img
+      class="sc-papXJ exbFeb"
+    />
+    <div
+      class="sc-ftvSup ixLwpx"
+    >
+      <p
+        class="sc-gsnTZi sc-gKXOVf FhkDi fRINSj"
+      >
+        Nama Driver
+      </p>
+      <p
+        class="sc-iBkjds foQcVD"
+      >
+        firstName, lastName
+      </p>
+    </div>
+    <div
+      class="sc-ftvSup ixLwpx"
+    >
+      <p
+        class="sc-gsnTZi sc-gKXOVf FhkDi fRINSj"
+      >
+        Telepon
+      </p>
+      <p
+        class="sc-iBkjds foQcVD"
+      >
+        098123123123
+      </p>
+    </div>
+    <div
+      class="sc-ftvSup ixLwpx"
+    >
+      <p
+        class="sc-gsnTZi sc-gKXOVf FhkDi fRINSj"
+      >
+        Email
+      </p>
+      <p
+        class="sc-iBkjds foQcVD"
+      >
+        email@email.com
+      </p>
+    </div>
+    <div
+      class="sc-ftvSup ixLwpx"
+    >
+      <p
+        class="sc-gsnTZi sc-gKXOVf FhkDi fRINSj"
+      >
+        Tanggal Lahir
+      </p>
+      <p
+        class="sc-iBkjds foQcVD"
+      >
+        12/10/1998
+      </p>
+    </div>
   </div>
 </DocumentFragment>
 `;
