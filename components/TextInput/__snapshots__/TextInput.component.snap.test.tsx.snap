@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextInputSnapshot should render normal TextInput 1`] = `
+<DocumentFragment>
+  <input
+    id="id"
+    placeholder="placeholder"
+    type="password"
+  />
+</DocumentFragment>
+`;
+
+exports[`TextInputSnapshot should render normal TextInput without id 1`] = `
+<DocumentFragment>
+  <input
+    placeholder="placeholder"
+    type="password"
+  />
+</DocumentFragment>
+`;
