@@ -4,7 +4,7 @@ import {RiCalendar2Fill} from 'react-icons/ri'
 import {FaUserCircle, FaBars, FaTimes} from 'react-icons/fa'
 
 import { Component } from '../../index.types'
-import { MenuIconClose, MenuIconOpen, MenuItemLinks, MenuItems, Navbar, SidebarMenu } from './SideBar.component.styles'
+import { InlineText, MenuIconClose, MenuIconOpen, MenuItemLinks, MenuItems, Navbar, SidebarMenu, UserName } from './SideBar.component.styles'
 import { useRouter } from 'next/router'
 
 export const SidebarData = [
@@ -36,6 +36,10 @@ const Sidebar: Component<any> = () => {
                 <MenuIconOpen href="#" onClick={showSidebar}>
                     <FaBars />
                 </MenuIconOpen>
+                <div>
+                  <InlineText>Hello,</InlineText>
+                  <UserName>Shipper User</UserName>
+                </div>
             </Navbar>
 
             <SidebarMenu close={close}>

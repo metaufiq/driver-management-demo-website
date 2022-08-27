@@ -2,17 +2,26 @@ import styled from 'styled-components'
 
 export const Navbar = styled.div`
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
     align-items: center;
     height: 3.5rem;
+    margin: 0 2rem;
     background-color: white;
+`
+
+export const InlineText = styled.p`
+  display: inline-block;
+`
+
+export const UserName = styled(InlineText)`
+  color: #ff453b;
+  margin-left: 0.3rem;
 `
 
 export const MenuIconOpen = styled.a`
     display: flex;
     justify-content: start;
     font-size: 1.5rem;
-    margin-left: 2rem;
     color: #ff453b;
 `
 
