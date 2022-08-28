@@ -3,13 +3,14 @@ import { useEffect, useState } from "react";
 import { User as UserFromAPI, Params as APIParams } from "../../api/randomUser/randomUser.api.types";
 import api from "../../api";
 import { SetUsers, User, Users } from "../../index.types";
+import { formatISODateToDate } from "../../utils";
 
 const _convertUserToUserState = (user: UserFromAPI):User => ({
   email: user.email,
-  dob: user.dob.date,
+  dob: formatISODateToDate(user.dob.date),
   firstName: user.name.first,
   lastName: user.name.last,
-  username: user.login.username,
+  username: user.login.username.toUpperCase(),
   phone: user.phone,
   profilePicture: user.picture.medium
 })
