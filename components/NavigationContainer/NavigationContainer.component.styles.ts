@@ -50,7 +50,7 @@ export const MenuIconClose = styled.a`
     }
 `
 
-export const SidebarMenu = styled.div<{close: boolean}>`
+export const MenuList = styled.div<{close: boolean}>`
     width: 250px;
     height: 100vh;
     background-color: white;

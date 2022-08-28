@@ -10,17 +10,17 @@ import {
   MenuIconOpen, 
   MenuItemLinks, 
   MenuItems, 
-  Navbar, 
-  SidebarMenu, 
+  MenuList, 
+  Navbar,
   UserContainer, 
   UserName 
-} from './SideBar.component.styles'
+} from './NavigationContainer.component.styles'
 import { useRouter } from 'next/router'
-import { Props } from './SideBar.component.types'
+import { Props } from './NavigationContainer.component.types'
 import Avatar from '../Avatar'
-import { SIDEBAR_MENU, USER_AVATAR_URL } from '../../constants'
+import { NAVIGATION_MENU, USER_AVATAR_URL } from '../../constants'
 
-const Sidebar: Component<Props> = (props) => {
+const NavigationContainer: Component<Props> = (props) => {
     const router = useRouter()
     const isRootRoute = router.route === '/';
     
@@ -49,11 +49,11 @@ const Sidebar: Component<Props> = (props) => {
             </Navbar>
 
             <ContentContainer>
-              <SidebarMenu close={close}>
+              <MenuList close={close}>
                 <MenuIconClose href="#" onClick={showSidebar}>
                     Close
                 </MenuIconClose>
-                  {SIDEBAR_MENU.map((item, index) => {
+                  {NAVIGATION_MENU.map((item, index) => {
                       return (
                           <MenuItems 
                             key={index} 
@@ -68,7 +68,7 @@ const Sidebar: Component<Props> = (props) => {
                           </MenuItems>
                       )
                   })}
-              </SidebarMenu>
+              </MenuList>
               <ChildContainer>
                 {props.children}
               </ChildContainer>
@@ -77,4 +77,4 @@ const Sidebar: Component<Props> = (props) => {
     )
 }
 
-export default Sidebar
+export default NavigationContainer

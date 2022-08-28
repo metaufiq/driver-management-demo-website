@@ -1,4 +1,4 @@
-import Sidebar from ".";
+import NavigationContainer from ".";
 import { themes } from "../../configs/themes";
 import { assertSnapshots } from "../../test";
 import { Configs } from "../../test/index.types";
@@ -12,15 +12,15 @@ jest.mock('next/router', ()=>({
   })
 }))
 
-describe('SideBarSnapshot', () => {
+describe('NavigationContainerSnapshot', () => {
 
   const configs:Configs<any> = [
     {
-      desc: 'should render sidebar',
+      desc: 'should render navigation container',
       useTheme: true,
       theme: themes
     },
   ];
 
-  assertSnapshots(Sidebar, configs);
+  assertSnapshots(NavigationContainer, configs);
 });
