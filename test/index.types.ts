@@ -1,8 +1,12 @@
+import { DefaultTheme } from "styled-components"
+
 export type Props = any
 
 export type Config<Props> = {
   props?: Props,
-  desc: string
+  desc: string,
+  useTheme?: boolean,
+  theme?: DefaultTheme
 }
 
 export type RoundedType = 'left-only' | 'right-only'
