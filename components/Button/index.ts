@@ -3,7 +3,6 @@ import { Props } from "./Button.component.types";
 
 export const StyledButton = styled.button<Props>`
   font-size: 1rem;
-  margin: 1rem;
   padding: 1rem;
   border: 0;
   text-align: ${({textAlign})=> textAlign ?? 'center'};
