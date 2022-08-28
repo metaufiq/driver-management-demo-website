@@ -15,8 +15,8 @@ export const useInnit = (initialValue: Params['initialValue'], setUsers: SetUser
   }, [initialValue]);
 }
 
-export const filterByKeys = (searchInput: string)=>(user:User) => {
-  return FILTER_KEYS.some(key=> {
+export const _filterByKeys = (searchInput: string, filterKeys: FilterKey[])=>(user:User) => {
+  return filterKeys.some(key=> {
     let data = user[key]
 
     const lowerCaseData = data.toLowerCase();
@@ -28,7 +28,7 @@ export const filterByKeys = (searchInput: string)=>(user:User) => {
 
 export const useSearch = ({searchInput, initialValue}: Params, setUsers: SetUsers)=>{
   useEffect(()=>{
-    const data = !searchInput ? initialValue : initialValue.filter(filterByKeys(searchInput));
+    const data = !searchInput ? initialValue : initialValue.filter(_filterByKeys(searchInput, FILTER_KEYS));
     setUsers(data.slice(0,5))
 
   // eslint-disable-next-line react-hooks/exhaustive-deps

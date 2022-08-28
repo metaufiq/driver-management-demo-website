@@ -1,5 +1,6 @@
-import { User } from "../../index.types";
-import { useInnit, useSearch } from "./useUsers.hooks";
+import React from "react";
+import { User, Users } from "../../index.types";
+import useUsers, { useInnit, usePage, useSearch, _filterByKeys } from "./useUsers.hooks";
 
 const mockedUser: User ={
   dob: '12/10/1998',
@@ -14,11 +15,10 @@ const mockedUser: User ={
 jest.mock('react', ()=>({
   ...jest.requireActual('react'),
   useEffect: jest.fn(fn=>fn()),
-  useState: jest.fn(()=>[[], jest.fn()])
 }))
 
 describe('#useInnit', () => {
-  it('should get first 5 user', ()=>{
+  it('should get first 5 first user', ()=>{
     const setUsers = jest.fn()
     const initialValue = new Array(10).fill(mockedUser);
     
@@ -28,8 +28,40 @@ describe('#useInnit', () => {
   })
 });
 
+describe('#_filterByKeys', () => {
+  it('should return true when value equal to search input and same word case', ()=>{
+    const user = {...mockedUser, firstName: 'benedict'}
+    const searchInput = 'be';
+
+    const result = _filterByKeys(searchInput, ['firstName'])(user)
+
+
+    expect(result).toBeTruthy()
+  })
+  
+  it('should return true when value equal to search input and different word case', ()=>{
+    const user = {...mockedUser, firstName: 'Benedict'}
+    const searchInput = 'be';
+
+    const result = _filterByKeys(searchInput, ['firstName'])(user)
+
+
+    expect(result).toBeTruthy()
+  })
+
+  it('should return true when value not equal to search input', ()=>{
+    const user = {...mockedUser, firstName: 'cenedict'}
+    const searchInput = 'be';
+
+    const result = _filterByKeys(searchInput, ['firstName'])(user)
+
+
+    expect(result).toBeFalsy()
+  })
+});
+
 describe('#useSearch', () => {
-  it('should set visibility to false', ()=>{
+  it('should get first 5 user when firstname contain search input', ()=>{
     const setUsers = jest.fn()
     const mockedUsers = new Array(10).fill(mockedUser);
     const expectedUser1 = {...mockedUser, firstName: 'benedict'}
@@ -50,17 +82,96 @@ describe('#useSearch', () => {
 
     expect(setUsers).toBeCalledWith(expected)
   })
+
+  it('should get first 5 user from initial value when search input empty', ()=>{
+    const setUsers = jest.fn()
+    const initialValue = new Array(10).fill(mockedUser);
+    const expected = initialValue.slice(0,5);
+    const searchInput = '';
+
+    useSearch(
+      {
+      initialValue, 
+      searchInput, 
+      pageIndex:1
+      }, setUsers
+    )
+
+
+    expect(setUsers).toBeCalledWith(expected)
+  })
+
+  it('should didn`t get any user because none contain search input', ()=>{
+    const setUsers = jest.fn()
+    const initialValue = new Array(10).fill(mockedUser);
+    const searchInput = 'be';
+
+    useSearch(
+      {
+      initialValue, 
+      searchInput, 
+      pageIndex:1
+      }, setUsers
+    )
+
+
+    expect(setUsers).toBeCalledWith([])
+  })
 });
 
-// describe('#useUsers', () => {
-//   it('should set visibility to false', ()=>{
-//     const setVisible = jest.fn()
+describe('#usePage', () => {
 
-//     const result = useUsers({
-//       initialValue,
-//       pageIndex: 1
-//     })
+  it('should get first 5 user from initial value on first page', ()=>{
+    const setUsers = jest.fn()
+    const initialValue = new Array(10).fill(mockedUser);
+    const expected = initialValue.slice(0,5);
+    const searchInput = '';
+    const pageIndex = 1;
 
-//     expect(result).toEqual({users: []})
-//   })
-// });
+    usePage(
+      {
+      initialValue, 
+      searchInput, 
+      pageIndex
+      }, setUsers
+    )
+
+
+    expect(setUsers).toBeCalledWith(expected)
+  })
+
+  it('should get 5 user from index 6 to 10 inside initial value on second page', ()=>{
+    const setUsers = jest.fn()
+    const initialValue = new Array(10).fill(mockedUser);
+    const expected = initialValue.slice(4,9);
+    const searchInput = '';
+    const pageIndex = 2;
+
+    usePage(
+      {
+      initialValue, 
+      searchInput, 
+      pageIndex
+      }, setUsers
+    )
+
+
+    expect(setUsers).toBeCalledWith(expected)
+  })
+});
+
+describe('#useUsers', () => {
+  it('should equal to first state', ()=>{
+    const expected = new Array(10).fill(mockedUser);
+    React.useState = jest.fn();
+    // @ts-ignore: mock implementation
+    React.useState.mockImplementation(() => [expected, ()=>{}]);
+
+    const result = useUsers({
+      initialValue: [],
+      pageIndex: 1
+    })
+
+    expect(result).toEqual({users: expected})
+  })
+});
