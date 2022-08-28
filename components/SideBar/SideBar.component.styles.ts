@@ -97,4 +97,6 @@ export const ContentContainer = styled.div`
 export const ChildContainer = styled.div`
   padding: 0;
   flex-grow: 1;
+  background-color: #fafafa;
+  padding: 2rem;
 `
