@@ -16,6 +16,11 @@ const _convertUserToUserState = (user: UserFromAPI):User => ({
 })
 
 const _getListUser = async (params: APIParams):Promise<Users> => {
+  const stringifyUsers = localStorage.getItem('users')
+  if (stringifyUsers) {
+    return JSON.parse(stringifyUsers)
+  }
+
   const {results} = await api.randomUser.getListUser(params)
 
   const users = results.map(_convertUserToUserState)
@@ -26,6 +31,7 @@ const _asyncInnit = async (setUsers: SetUsers)=>{
   const users = await _getListUser({results:30})
 
   setUsers(users)
+  localStorage.setItem('users', JSON.stringify(users))
 }
 
 
