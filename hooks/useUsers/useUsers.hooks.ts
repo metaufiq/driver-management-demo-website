@@ -7,13 +7,15 @@ import { FilterKey, Params } from "./useUsers.hooks.types";
 
 
 const FILTER_KEYS:FilterKey[] = ["firstName"];
-const useInnit = (initialValue: Params['initialValue'], setUsers: SetUsers)=>{
+
+export const useInnit = (initialValue: Params['initialValue'], setUsers: SetUsers)=>{
   useEffect(()=>{
     setUsers(initialValue.slice(0,5))
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [initialValue]);
 }
 
-const filterByKeys = (searchInput: string)=>(user:User) => {
+export const filterByKeys = (searchInput: string)=>(user:User) => {
   return FILTER_KEYS.some(key=> {
     let data = user[key]
 
@@ -24,14 +26,16 @@ const filterByKeys = (searchInput: string)=>(user:User) => {
   })
 }
 
-const useSearch = ({searchInput, initialValue}: Params, setUsers: SetUsers)=>{
+export const useSearch = ({searchInput, initialValue}: Params, setUsers: SetUsers)=>{
   useEffect(()=>{
     const data = !searchInput ? initialValue : initialValue.filter(filterByKeys(searchInput));
     setUsers(data.slice(0,5))
+
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [searchInput])
 }
 
-const usePage = ({pageIndex, initialValue}: Params, setUsers: SetUsers)=>{
+export const usePage = ({pageIndex, initialValue}: Params, setUsers: SetUsers)=>{
 
   useEffect(()=>{
     if (pageIndex === 1) {
@@ -43,6 +47,7 @@ const usePage = ({pageIndex, initialValue}: Params, setUsers: SetUsers)=>{
     const newUsers = initialValue.slice(sliceForm, sliceEnd);
 
     setUsers(newUsers)
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pageIndex])
 }
 
