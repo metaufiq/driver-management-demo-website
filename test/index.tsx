@@ -18,7 +18,12 @@ const _renderContainer = <Props,>(Component:ComponentType<Props>, {useTheme, pro
 export const assertSnapshots = <Props,>(Component:ComponentType<Props>, configs: Configs<Props>)=>{
 
   configs.forEach(config => {
-    const {desc} = config
+    const {desc, beforeTest} = config
+
+    if (beforeTest) {
+      beforeTest();
+    }
+
     test(desc, () => {
       jest.useFakeTimers()
       const container = _renderContainer(Component, config)

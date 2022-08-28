@@ -6,7 +6,8 @@ export type Config<Props> = {
   props?: Props,
   desc: string,
   useTheme?: boolean,
-  theme?: DefaultTheme
+  theme?: DefaultTheme,
+  beforeTest?: VoidFunction
 }
 
 export type RoundedType = 'left-only' | 'right-only'
