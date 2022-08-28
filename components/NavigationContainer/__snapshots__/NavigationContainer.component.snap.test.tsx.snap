@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SideBarSnapshot should render sidebar 1`] = `
+exports[`NavigationContainerSnapshot should render navigation container 1`] = `
 <DocumentFragment>
   <div
     class="sc-bczRLJ hFelsa"
