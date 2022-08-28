@@ -16,7 +16,7 @@ export const StyledButton = styled.button<Props>`
 `
 
 export const PrimaryButton = styled(StyledButton)<Props>`
-  background-color: #ff453b;
+  background-color: ${({theme})=>theme.colors.primary};
   color: white;
   border-radius: 0.125rem;
 `

@@ -10,10 +10,6 @@ export const GrayText = styled.p`
   color: #c6c6c6;
 `
 
-export const PrimaryText = styled.p`
-  color: #ff453b;
-`
-
 export const Header = styled.div`
   padding: 1rem;
   border-bottom: 0.5px solid gray;
@@ -31,9 +27,10 @@ export const DriverIDTitle = styled(GrayText)`
   margin-bottom: 0;
   font-size: 0.8rem;
 `
-export const DriverIDValue = styled(PrimaryText)`
+export const DriverIDValue = styled.p`
   display: inline-block;
   margin-top: 0;
+  color: ${({theme})=>theme.colors.primary};
   margin-bottom: 0;
   font-size: 0.8rem;
 `

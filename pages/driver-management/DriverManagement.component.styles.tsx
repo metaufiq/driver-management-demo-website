@@ -12,7 +12,7 @@ export const HeaderContainer = styled.div`
 `
 
 export const HeaderTitle = styled.h1`
-  color: #ff453b;
+  color: ${({theme})=>theme.colors.primary};
   margin: 0.125rem 0;
 `
 

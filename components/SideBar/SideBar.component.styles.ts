@@ -17,7 +17,7 @@ export const InlineText = styled.p`
 `
 
 export const UserName = styled(InlineText)`
-  color: #ff453b;
+  color: ${({theme})=>theme.colors.primary};
   margin-left: 0.3rem;
 `
 
@@ -25,7 +25,7 @@ export const MenuIconOpen = styled.a<{close: boolean}>`
     display: flex;
     justify-content: start;
     font-size: 1.5rem;
-    color: #ff453b;
+    color: ${({theme})=>theme.colors.primary};
     @media (min-width: 768px) {
       display: none;
     }
@@ -44,7 +44,7 @@ export const MenuIconClose = styled.a`
     font-size: 0.8rem;
     margin-top: 0.75rem;
     margin-right: 1rem;
-    color: #ff453b;
+    color: ${({theme})=>theme.colors.primary};
     @media (min-width: 768px) {
       display: none;
     }
@@ -68,7 +68,7 @@ export const MenuItems = styled.li<{active:boolean}>`
     justify-content: start;
     width: 100%;
     padding: 1rem 0;
-    border-left: ${({active }) => active ? '4px solid #ff453b' : '0'};
+    border-left: ${({active,theme }) => active ? `4px solid ${theme.colors.primary}` : '0'};
 `
 
 export const MenuItemLinks = styled.a`
@@ -82,7 +82,7 @@ export const MenuItemLinks = styled.a`
     background-color: white;
 
     &:hover {
-        color: #ff453b;
+        color: ${({theme})=>theme.colors.primary};
     }
 `
 

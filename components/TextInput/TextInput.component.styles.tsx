@@ -20,5 +20,5 @@ export const LeftIconContainer = styled.div`
   font-size: 1rem;
   padding-top: 0.125rem;
   padding-right: 0.5rem;
-  color: #ff453b;
+  color: ${({theme})=>theme.colors.primary};
 `
