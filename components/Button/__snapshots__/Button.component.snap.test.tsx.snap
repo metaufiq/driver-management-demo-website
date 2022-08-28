@@ -1,9 +1,33 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`StyledButtonSnapshot should render normal styled button 1`] = `
+exports[`StyledButtonSnapshot should render custom text align button 1`] = `
+<DocumentFragment>
+  <button
+    class="sc-bczRLJ dqWClK"
+  />
+</DocumentFragment>
+`;
+
+exports[`StyledButtonSnapshot should render normal button 1`] = `
 <DocumentFragment>
   <button
     class="sc-bczRLJ jMYSRp"
+  />
+</DocumentFragment>
+`;
+
+exports[`StyledButtonSnapshot should render normal navigation button 1`] = `
+<DocumentFragment>
+  <button
+    class="sc-bczRLJ hQcwZr"
+  />
+</DocumentFragment>
+`;
+
+exports[`StyledButtonSnapshot should render normal primary button 1`] = `
+<DocumentFragment>
+  <button
+    class="sc-bczRLJ iyjxpd"
   />
 </DocumentFragment>
 `;
