@@ -3,9 +3,8 @@ import Head from 'next/head'
 import { useState } from 'react';
 import { FaSearch } from 'react-icons/fa';
 import { HiOutlinePlus } from 'react-icons/hi';
-import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 
-import { NavigationButton, PrimaryButton } from '../../components/Button';
+import { PrimaryButton } from '../../components/Button';
 import TextInput from '../../components/TextInput';
 import { PAGE } from '../../constants';
 import useUsers from '../../hooks/useUsers';
@@ -14,11 +13,11 @@ import {
   HeaderContainer,
   HeaderDescription, 
   HeaderTitle, 
-  HeaderUtilsContainer, 
-  PaginationContainer,
+  HeaderUtilsContainer
 } from './DriverManagement.component.styles';
 import { SetPageIndex, SetSearchInput } from './DriverManagement.component.types';
 import ListDriver from '../../components/ListDriver/ListDriver.component';
+import PaginationBar from '../../components/PaginationBar';
 
 const _onInputSearch = (setSearchInput: SetSearchInput)=>(event: React.ChangeEvent<HTMLInputElement>)=>{
   setSearchInput(event.target.value)
@@ -72,23 +71,12 @@ const DriverManagement: NextPage = (props) => {
         refetch={refetch}
       />
 
-      <PaginationContainer>
-        <NavigationButton 
-          onClick={_onPrevPage(setPageIndex)} 
-          disabled={pageIndex===1}
-        >
-          <FiChevronLeft/>
-          Prev Page
-         
-        </NavigationButton>
-        <NavigationButton 
-          onClick={_onNextPage(setPageIndex)} 
-          disabled={pageIndex===PAGE}
-        >
-          Next Page
-          <FiChevronRight/>
-        </NavigationButton>
-      </PaginationContainer>
+      <PaginationBar
+        onNext={_onNextPage(setPageIndex)}
+        onPrev={_onPrevPage(setPageIndex)}
+        pageIndex={pageIndex}
+        totalPages={PAGE}
+      />
     </>
   )
 }

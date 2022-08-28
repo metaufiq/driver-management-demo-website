@@ -31,9 +31,3 @@ export const HeaderUtilsContainer = styled.div`
       flex-direction: column;
   }
 `
-
-export const PaginationContainer = styled.div`
-  display: flex;
-  column-gap: 1rem;
-  justify-content: center;
-`
