@@ -1,5 +1,5 @@
-import { StyledButton } from ".";
 import { assertSnapshots } from "../../test";
+import Button from ".";
 
 describe('StyledButtonSnapshot', () => {
   const mockProps = {
@@ -13,5 +13,5 @@ describe('StyledButtonSnapshot', () => {
     }
   ];
 
-  assertSnapshots(StyledButton, configs);
+  assertSnapshots(Button, configs);
 });

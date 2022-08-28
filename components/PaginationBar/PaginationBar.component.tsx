@@ -1,7 +1,7 @@
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
 import { Component } from "../../index.types";
-import { NavigationButton } from "../Button";
+import Button from "../Button";
 import { PaginationContainer } from "./PaginationBar.component.styles";
 import { Props } from "./PaginationBar.component.types";
 
@@ -9,21 +9,23 @@ const MINIMUM_PAGE_INDEX = 1;
 
 const PaginationBar:Component<Props> = ({onNext, onPrev, pageIndex, totalPages})=>(
   <PaginationContainer>
-    <NavigationButton 
+    <Button
       onClick={onPrev} 
       disabled={pageIndex===MINIMUM_PAGE_INDEX}
+      buttonType='NAVIGATION'
     >
       <FiChevronLeft/>
       Prev Page
     
-    </NavigationButton>
-    <NavigationButton 
+    </Button>
+    <Button 
       onClick={onNext} 
       disabled={pageIndex===totalPages}
+      buttonType='NAVIGATION'
     >
       Next Page
       <FiChevronRight/>
-    </NavigationButton>
+    </Button>
 </PaginationContainer>
 ) 
 

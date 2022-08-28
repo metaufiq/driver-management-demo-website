@@ -4,7 +4,6 @@ import { useState } from 'react';
 import { FaSearch } from 'react-icons/fa';
 import { HiOutlinePlus } from 'react-icons/hi';
 
-import { PrimaryButton } from '../../components/Button';
 import TextInput from '../../components/TextInput';
 import { PAGE } from '../../constants';
 import useUsers from '../../hooks/useUsers';
@@ -18,6 +17,7 @@ import {
 import { SetPageIndex, SetSearchInput } from './DriverManagement.component.types';
 import ListDriver from '../../components/ListDriver/ListDriver.component';
 import PaginationBar from '../../components/PaginationBar';
+import Button from '../../components/Button';
 
 const _onInputSearch = (setSearchInput: SetSearchInput)=>(event: React.ChangeEvent<HTMLInputElement>)=>{
   setSearchInput(event.target.value)
@@ -56,10 +56,10 @@ const DriverManagement: NextPage = (props) => {
             type='text'
             leftIcon={<FaSearch/>}
           />
-          <PrimaryButton textAlign='start'>
+          <Button textAlign='start' buttonType='PRIMARY'>
               TAMBAH DRIVER
               <HiOutlinePlus/>
-          </PrimaryButton>
+          </Button>
         </HeaderUtilsContainer>
       </HeaderContainer>
 

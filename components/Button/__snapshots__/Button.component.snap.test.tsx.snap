@@ -3,7 +3,7 @@
 exports[`StyledButtonSnapshot should render normal styled button 1`] = `
 <DocumentFragment>
   <button
-    class="sc-bczRLJ czDrHi"
+    class="sc-bczRLJ jMYSRp"
   />
 </DocumentFragment>
 `;

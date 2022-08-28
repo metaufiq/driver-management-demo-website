@@ -3,28 +3,28 @@
 exports[`ListDriverSnapshot should render normal list driver 1`] = `
 <DocumentFragment>
   <div
-    class="sc-ksZaOG gitNJv"
+    class="sc-evZas hJMyXD"
   >
     <div
-      class="sc-eCYdqJ iywVtZ"
+      class="sc-dkzDqf kFGQEb"
     >
       <div
-        class="sc-gKXOVf bmManZ"
+        class="sc-eCYdqJ cOzWIu"
       >
         <div>
           <p
-            class="sc-jSMfEi sc-iBkjds iqvdNZ hxEleX"
+            class="sc-hKMtZM sc-jSMfEi cHivdW dtQlSY"
           >
             Driver ID
           </p>
           <p
-            class="sc-ftvSup BYxNv"
+            class="sc-gKXOVf iKGcfe"
           >
             userName
           </p>
         </div>
         <div
-          class="sc-papXJ hdbybu"
+          class="sc-iBkjds eUfGnI"
         >
           <svg
             fill="currentColor"
@@ -42,61 +42,61 @@ exports[`ListDriverSnapshot should render normal list driver 1`] = `
         </div>
       </div>
       <img
-        class="sc-hKMtZM iuUrIk"
+        class="sc-gsnTZi hFMZzo"
         src="profile_picture_url"
       />
       <div
-        class="sc-iqcoie fwuSZr"
+        class="sc-jqUVSM ifauud"
       >
         <p
-          class="sc-jSMfEi sc-jqUVSM iqvdNZ bwebnF"
+          class="sc-hKMtZM sc-ftvSup cHivdW jJhkwV"
         >
           Nama Driver
         </p>
         <p
-          class="sc-kDDrLX gamHiL"
+          class="sc-papXJ kUVpcZ"
         >
           firstName, lastName
         </p>
       </div>
       <div
-        class="sc-iqcoie fwuSZr"
+        class="sc-jqUVSM ifauud"
       >
         <p
-          class="sc-jSMfEi sc-jqUVSM iqvdNZ bwebnF"
+          class="sc-hKMtZM sc-ftvSup cHivdW jJhkwV"
         >
           Telepon
         </p>
         <p
-          class="sc-kDDrLX gamHiL"
+          class="sc-papXJ kUVpcZ"
         >
           098123123123
         </p>
       </div>
       <div
-        class="sc-iqcoie fwuSZr"
+        class="sc-jqUVSM ifauud"
       >
         <p
-          class="sc-jSMfEi sc-jqUVSM iqvdNZ bwebnF"
+          class="sc-hKMtZM sc-ftvSup cHivdW jJhkwV"
         >
           Email
         </p>
         <p
-          class="sc-kDDrLX gamHiL"
+          class="sc-papXJ kUVpcZ"
         >
           email@email.com
         </p>
       </div>
       <div
-        class="sc-iqcoie fwuSZr"
+        class="sc-jqUVSM ifauud"
       >
         <p
-          class="sc-jSMfEi sc-jqUVSM iqvdNZ bwebnF"
+          class="sc-hKMtZM sc-ftvSup cHivdW jJhkwV"
         >
           Tanggal Lahir
         </p>
         <p
-          class="sc-kDDrLX gamHiL"
+          class="sc-papXJ kUVpcZ"
         >
           12/10/1998
         </p>

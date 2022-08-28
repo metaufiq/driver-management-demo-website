@@ -3,10 +3,10 @@
 exports[`PaginationBarSnapshot should render normal pagination bar 1`] = `
 <DocumentFragment>
   <div
-    class="sc-hKMtZM fZTmsv"
+    class="sc-gsnTZi kzffjj"
   >
     <button
-      class="sc-bczRLJ sc-dkzDqf czDrHi gaOdch"
+      class="sc-bczRLJ hQcwZr"
       disabled=""
     >
       <svg
@@ -27,7 +27,7 @@ exports[`PaginationBarSnapshot should render normal pagination bar 1`] = `
       Prev Page
     </button>
     <button
-      class="sc-bczRLJ sc-dkzDqf czDrHi gaOdch"
+      class="sc-bczRLJ hQcwZr"
     >
       Next Page
       <svg
