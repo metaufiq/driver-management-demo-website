@@ -11,6 +11,9 @@ export const StyledButton = styled.button<Props>`
   column-gap: 1rem;
   align-items: center;
   cursor: pointer;
+  :disabled{
+    cursor: default;
+  }
 `
 
 export const PrimaryButton = styled(StyledButton)<Props>`
