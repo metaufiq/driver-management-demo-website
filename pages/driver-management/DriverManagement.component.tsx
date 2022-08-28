@@ -17,9 +17,11 @@ import {
   HeaderTitle, 
   HeaderUtilsContainer, 
   ListUserContainer, 
-  PaginationContainer 
+  PaginationContainer, 
+  SpinnerContainer
 } from './DriverManagement.component.styles';
 import { SetPageIndex, SetSearchInput } from './DriverManagement.component.types';
+import Spinner from '../../components/Spinner';
 
 const _onInputSearch = (setSearchInput: SetSearchInput)=>(event: React.ChangeEvent<HTMLInputElement>)=>{
   setSearchInput(event.target.value)
@@ -34,7 +36,7 @@ const _onPrevPage = (setPageIndex: SetPageIndex)=>()=>{
 }
 
 const DriverManagement: NextPage = (props) => {
-  const {users:initialValue} = useUsersQuery();
+  const {users:initialValue, error, loading} = useUsersQuery();
   const [pageIndex, setPageIndex] = useState(1);
   const [searchInput, setSearchInput]= useState<string>();
   const {users} = useUsers({initialValue, searchInput, pageIndex})
@@ -66,10 +68,19 @@ const DriverManagement: NextPage = (props) => {
       </HeaderContainer>
 
       <br/>
+      {
+        loading ? (
+          <SpinnerContainer>
+            <Spinner size='4rem'/>
+          </SpinnerContainer>
+        ):
+        (
+          <ListUserContainer>
+           {users.map(user=>(<DriverCard user={user} key={user.username}/>))}
+          </ListUserContainer>
+        )
+      }
 
-      <ListUserContainer>
-        {users.map(user=>(<DriverCard user={user} key={user.username}/>))}
-      </ListUserContainer>
       <PaginationContainer>
         <NavigationButton 
           onClick={_onPrevPage(setPageIndex)} 

@@ -4,6 +4,7 @@ import { User as UserFromAPI, Params as APIParams } from "../../api/randomUser/r
 import api from "../../api";
 import { SetUsers, User, Users } from "../../index.types";
 import { formatISODateToDate } from "../../utils";
+import { SetError, SetLoading } from "./useUsersQuery.hooks.types";
 
 const _convertUserToUserState = (user: UserFromAPI):User => ({
   email: user.email,
@@ -16,10 +17,10 @@ const _convertUserToUserState = (user: UserFromAPI):User => ({
 })
 
 const _getListUser = async (params: APIParams):Promise<Users> => {
-  const stringifyUsers = localStorage.getItem('users')
-  if (stringifyUsers) {
-    return JSON.parse(stringifyUsers)
-  }
+  // const stringifyUsers = localStorage.getItem('users')
+  // if (stringifyUsers) {
+  //   return JSON.parse(stringifyUsers)
+  // }
 
   const {results} = await api.randomUser.getListUser(params)
 
@@ -27,23 +28,36 @@ const _getListUser = async (params: APIParams):Promise<Users> => {
   return users;
 }
 
-const _asyncInnit = async (setUsers: SetUsers)=>{
-  const users = await _getListUser({results:30})
+const _asyncInnit = async (
+  setUsers: SetUsers, 
+  setLoading: SetLoading, 
+  setError: SetError
+)=>{
+  try {
+    setLoading(true)
+    const users = await _getListUser({results:30})
 
-  setUsers(users)
-  localStorage.setItem('users', JSON.stringify(users))
+    setUsers(users)
+    localStorage.setItem('users', JSON.stringify(users))
+    setLoading(false)
+  } catch (error) {
+    setError(true)
+  }
+
 }
 
 
 const useUsersQuery = () => {
   const [users, setUsers] = useState<Users>([]);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(false);
 
   useEffect(()=>{
-    _asyncInnit(setUsers)
+    _asyncInnit(setUsers, setLoading, setError)
   }
   ,[])
 
-  return {users}
+  return {users, loading, error}
 }
 
 export default useUsersQuery;

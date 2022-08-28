@@ -53,6 +53,14 @@ export const ListUserContainer = styled.div`
   }
 `
 
+export const SpinnerContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  padding: 4rem;
+`
+
 export const PaginationContainer = styled.div`
   display: flex;
   column-gap: 1rem;
