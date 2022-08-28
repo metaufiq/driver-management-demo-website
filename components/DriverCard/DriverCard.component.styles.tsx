@@ -14,19 +14,35 @@ export const PrimaryText = styled.p`
   color: #ff453b;
 `
 
+export const Header = styled.div`
+  padding: 1rem;
+  border-bottom: 0.5px solid gray;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+`
+
 export const DriverIDTitle = styled(GrayText)`
   display: inline-block;
   margin-right: 0.5rem;
+  margin-top: 0;
+  margin-bottom: 0;
   font-size: 0.8rem;
 `
 export const DriverIDValue = styled(PrimaryText)`
   display: inline-block;
+  margin-top: 0;
+  margin-bottom: 0;
   font-size: 0.8rem;
 `
 
-export const DriverIDContainer = styled.div`
-  padding: 1rem;
-  border-bottom: 0.5px solid gray;
+export const ThreeDotsContainer = styled.div`
+  color: #c6c6c6;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 `
 
 export const Title = styled(GrayText)`

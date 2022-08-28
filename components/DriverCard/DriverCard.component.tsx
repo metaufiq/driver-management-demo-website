@@ -1,16 +1,32 @@
+import { HiDotsHorizontal } from "react-icons/hi";
+
 import { Component } from "../../index.types";
 import Avatar from "../Avatar";
-import { Container, ContentContainer, Description, DriverIDContainer, DriverIDTitle, DriverIDValue, GrayText, PrimaryText, Title } from "./DriverCard.component.styles";
+import { 
+  Container, 
+  ContentContainer,
+  Description,
+  DriverIDTitle,
+  DriverIDValue, 
+  Header,
+  ThreeDotsContainer, 
+  Title 
+} from "./DriverCard.component.styles";
 
 import { Props } from "./DriverCard.component.types";
 
 const DriverCard:Component<Props> = ({user})=>{
   return(
   <Container>
-    <DriverIDContainer>
-      <DriverIDTitle>Driver ID</DriverIDTitle>
-      <DriverIDValue>{user.username.toUpperCase()}</DriverIDValue>
-    </DriverIDContainer>
+    <Header>
+      <div>
+        <DriverIDTitle>Driver ID</DriverIDTitle>
+        <DriverIDValue>{user.username}</DriverIDValue>
+      </div>
+      <ThreeDotsContainer>
+        <HiDotsHorizontal/>
+      </ThreeDotsContainer>
+    </Header>
     <Avatar
       src={user.profilePicture}
     />
