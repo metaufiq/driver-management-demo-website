@@ -7,6 +7,7 @@ export const HeaderContainer = styled.div`
   align-items: center;
   border-radius: 0.125rem;
   background-color: white;
+  gap: 1rem;
   padding: 1rem;
 `
 
@@ -25,6 +26,7 @@ export const HeaderUtilsContainer = styled.div`
   flex-direction: row;
   justify-content: flex-end;
   flex: 1;
+  gap: 1rem;
   @media (max-width: 768px) {
       flex-direction: column;
   }
