@@ -1,39 +1,17 @@
-import Button from ".";
+import { StyledButton } from ".";
 import { assertSnapshots } from "../../test";
-import { Configs } from "../../test/index.types";
-import { Props } from "./Button.component.types";
 
-describe('ButtonSnapshot', () => {
-  const mockProps:Props = {
-    children: 'children'
+describe('StyledButtonSnapshot', () => {
+  const mockProps = {
+    onClick: ()=>{}
   };
 
-  const configs:Configs<Props> = [
-    {
-      props: {...mockProps, onClick: ()=>{}},
-      desc: 'should render normal Button'
-    },
+  const configs = [
     {
       props: mockProps,
-      desc: 'should render Button without onClick'
-    },
-    {
-      props: {...mockProps, onClick: ()=>{}, type: 'PRIMARY'},
-      desc: 'should render normal Button'
-    },
-    {
-      props: {...mockProps, type: 'PRIMARY'},
-      desc: 'should render Button without onClick'
-    },
-    {
-      props: {...mockProps, onClick: ()=>{}, type: 'SECONDARY'},
-      desc: 'should render normal Button'
-    },
-    {
-      props: {...mockProps, type: 'SECONDARY'},
-      desc: 'should render Button without onClick'
-    },
+      desc: 'should render normal styled button'
+    }
   ];
 
-  assertSnapshots(Button, configs);
+  assertSnapshots(StyledButton, configs);
 });

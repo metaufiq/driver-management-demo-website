@@ -1,12 +1,24 @@
 import Sidebar from ".";
+import { themes } from "../../configs/themes";
 import { assertSnapshots } from "../../test";
 import { Configs } from "../../test/index.types";
 
-describe('ButtonSnapshot', () => {
+jest.mock('next/router', ()=>({
+  ...jest.requireActual('next/router'),
+  useRouter: ()=>({
+    router:{
+      route: '/'
+    }
+  })
+}))
 
-  const configs = [
+describe('SideBarSnapshot', () => {
+
+  const configs:Configs<any> = [
     {
-      desc: 'should render sidebar'
+      desc: 'should render sidebar',
+      useTheme: true,
+      theme: themes
     },
   ];
 

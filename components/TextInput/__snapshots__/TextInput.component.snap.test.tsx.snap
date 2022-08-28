@@ -3,7 +3,7 @@
 exports[`TextInputSnapshot should render normal TextInput 1`] = `
 <DocumentFragment>
   <div
-    class="sc-gsnTZi dtTrYC"
+    class="sc-gsnTZi hEqjwc"
   >
     <input
       class="sc-bczRLJ gBziFm"
@@ -18,7 +18,7 @@ exports[`TextInputSnapshot should render normal TextInput 1`] = `
 exports[`TextInputSnapshot should render normal TextInput without id 1`] = `
 <DocumentFragment>
   <div
-    class="sc-gsnTZi dtTrYC"
+    class="sc-gsnTZi hEqjwc"
   >
     <input
       class="sc-bczRLJ gBziFm"
