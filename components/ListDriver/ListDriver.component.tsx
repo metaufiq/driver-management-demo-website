@@ -1,5 +1,5 @@
 import { Component } from "../../index.types"
-import { PrimaryButton } from "../Button"
+import Button from "../Button"
 import DriverCard from "../DriverCard"
 import Spinner from "../Spinner"
 import { DataContainer, ErrorContainer, SpinnerContainer } from "./ListDriver.component.styles"
@@ -18,7 +18,7 @@ const ListDriver:Component<Props> = ({isLoading, isError, data, refetch})=>{
     return(
       <ErrorContainer>
         <p>Terjadi Kesalahan Saat pengambilan Data Driver.</p>
-        <PrimaryButton onClick={refetch}>Coba Lagi</PrimaryButton>
+        <Button onClick={refetch}>Coba Lagi</Button>
       </ErrorContainer>
     )
   }

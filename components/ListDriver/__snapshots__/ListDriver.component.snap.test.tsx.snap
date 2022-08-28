@@ -1,6 +1,35 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ListDriverSnapshot should render normal list driver 1`] = `
+exports[`ListDriverSnapshot should render error state list driver 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-crXcEl RnGTA"
+  >
+    <p>
+      Terjadi Kesalahan Saat pengambilan Data Driver.
+    </p>
+    <button
+      class="sc-bczRLJ jMYSRp"
+    >
+      Coba Lagi
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`ListDriverSnapshot should render loading state list driver 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-iqcoie kFsmBA"
+  >
+    <div
+      class="sc-kDDrLX cjRdeF"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`ListDriverSnapshot should render normal state list driver 1`] = `
 <DocumentFragment>
   <div
     class="sc-evZas hJMyXD"
