@@ -1,4 +1,8 @@
 import styled from 'styled-components'
+import { 
+  MenuItems as MenuItemsProps, 
+  StyledComponentProps 
+} from './NavigationContainer.component.types'
 
 export const Navbar = styled.div`
     display: flex;
@@ -21,7 +25,7 @@ export const UserName = styled(InlineText)`
   margin-left: 0.3rem;
 `
 
-export const MenuIconOpen = styled.a<{close: boolean}>`
+export const MenuIconOpen = styled.a<StyledComponentProps>`
     display: flex;
     justify-content: start;
     font-size: 1.5rem;
@@ -50,18 +54,18 @@ export const MenuIconClose = styled.a`
     }
 `
 
-export const MenuList = styled.div<{close: boolean}>`
+export const MenuList = styled.div<StyledComponentProps>`
     width: 250px;
     height: 100vh;
     background-color: white;
     @media (max-width: 768px) {
       width: 100%;
-      max-height: ${({close}) => close ? 0 : '200px'};
+      max-height: ${({visible}) => visible ? 0 : '200px'};
       transition: all 0.3s ease-out;
     }
 `
 
-export const MenuItems = styled.li<{active:boolean}>`
+export const MenuItems = styled.li<MenuItemsProps>`
     list-style: none;
     display: flex;
     align-items: center;

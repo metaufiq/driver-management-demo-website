@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import {FaBars} from 'react-icons/fa'
+import { useRouter } from 'next/router'
 
 import { Component } from '../../index.types'
 import { 
@@ -15,27 +16,28 @@ import {
   UserContainer, 
   UserName 
 } from './NavigationContainer.component.styles'
-import { useRouter } from 'next/router'
-import { Props } from './NavigationContainer.component.types'
+import { Props, SetVisible } from './NavigationContainer.component.types'
 import Avatar from '../Avatar'
 import { NAVIGATION_MENU, USER_AVATAR_URL } from '../../constants'
+
+export const _showSidebar = (setVisible:SetVisible, visible: boolean)=>
+() => setVisible(visible)
 
 const NavigationContainer: Component<Props> = (props) => {
     const router = useRouter()
     const isRootRoute = router.route === '/';
     
-    const [close, setClose] = useState(false)
+    const [visible, setVisible] = useState(false)
     
-    const showSidebar = () => setClose(!close)
     return (
         <>
             <Navbar>
                 <MenuIconOpen 
-                  close={close} 
+                  visible={visible} 
                   href="#" 
-                  onClick={showSidebar}
+                  onClick={_showSidebar(setVisible, true)}
                 >
-                    {close &&  <FaBars /> }
+                    {visible &&  <FaBars /> }
                 </MenuIconOpen>
                 <UserContainer>
                   <InlineText>Hello,</InlineText>
@@ -49,8 +51,8 @@ const NavigationContainer: Component<Props> = (props) => {
             </Navbar>
 
             <ContentContainer>
-              <MenuList close={close}>
-                <MenuIconClose href="#" onClick={showSidebar}>
+              <MenuList visible={visible}>
+                <MenuIconClose href="#" onClick={_showSidebar(setVisible, false)}>
                     Close
                 </MenuIconClose>
                   {NAVIGATION_MENU.map((item, index) => {
@@ -59,7 +61,7 @@ const NavigationContainer: Component<Props> = (props) => {
                             key={index} 
                             active={
                               router.route === item.path ||
-                              (isRootRoute && !!item.isRoot)
+                              (isRootRoute && item.isRoot!)
                             }>
                               <MenuItemLinks href={item.path}>
                                   {item.icon}
