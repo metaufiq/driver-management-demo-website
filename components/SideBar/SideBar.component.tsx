@@ -1,7 +1,5 @@
 import { useState } from 'react'
-import {TiHome} from 'react-icons/ti'
-import {RiCalendar2Fill} from 'react-icons/ri'
-import {FaUserCircle, FaBars} from 'react-icons/fa'
+import {FaBars} from 'react-icons/fa'
 
 import { Component } from '../../index.types'
 import { 
@@ -20,28 +18,12 @@ import {
 import { useRouter } from 'next/router'
 import { Props } from './SideBar.component.types'
 import Avatar from '../Avatar'
-import { USER_AVATAR_URL } from '../../constants'
-
-export const SidebarData = [
-  {
-      title: 'Beranda',
-      path: '#',
-      icon: <TiHome />
-  },
-  {
-      title: 'Driver Management',
-      path: '/driver-management',
-      icon: <FaUserCircle />
-  },
-  {
-      title: 'Pickup',
-      path: '#',
-      icon: <RiCalendar2Fill />
-  },
-]
+import { SIDEBAR_MENU, USER_AVATAR_URL } from '../../constants'
 
 const Sidebar: Component<Props> = (props) => {
     const router = useRouter()
+    const isRootRoute = router.route === '/';
+    
     const [close, setClose] = useState(false)
     
     const showSidebar = () => setClose(!close)
@@ -71,9 +53,14 @@ const Sidebar: Component<Props> = (props) => {
                 <MenuIconClose href="#" onClick={showSidebar}>
                     Close
                 </MenuIconClose>
-                  {SidebarData.map((item, index) => {
+                  {SIDEBAR_MENU.map((item, index) => {
                       return (
-                          <MenuItems key={index} active={router.route === item.path}>
+                          <MenuItems 
+                            key={index} 
+                            active={
+                              router.route === item.path ||
+                              (isRootRoute && !!item.isRoot)
+                            }>
                               <MenuItemLinks href={item.path}>
                                   {item.icon}
                                   <span style={{marginLeft: '16px'}}>{item.title}</span>
