@@ -17,10 +17,10 @@ const _convertUserToUserState = (user: UserFromAPI):User => ({
 })
 
 const _getListUser = async (params: APIParams):Promise<Users> => {
-  // const stringifyUsers = localStorage.getItem('users')
-  // if (stringifyUsers) {
-  //   return JSON.parse(stringifyUsers)
-  // }
+  const stringifyUsers = localStorage.getItem('users')
+  if (stringifyUsers) {
+    return JSON.parse(stringifyUsers)
+  }
 
   const {results} = await api.randomUser.getListUser(params)
 
@@ -35,12 +35,15 @@ const _asyncInnit = async (
 )=>{
   try {
     setLoading(true)
+    setError(false)
+
     const users = await _getListUser({results:30})
 
     setUsers(users)
     localStorage.setItem('users', JSON.stringify(users))
     setLoading(false)
   } catch (error) {
+    setLoading(false)
     setError(true)
   }
 
@@ -49,15 +52,14 @@ const _asyncInnit = async (
 
 const useUsersQuery = () => {
   const [users, setUsers] = useState<Users>([]);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(false);
-
-  useEffect(()=>{
+  const [isLoading, setLoading] = useState(false);
+  const [isError, setError] = useState(false);
+  const fetch = ()=>{
     _asyncInnit(setUsers, setLoading, setError)
-  }
-  ,[])
+  };
+  useEffect(fetch,[])
 
-  return {users, loading, error}
+  return {users, isLoading, isError, refetch: fetch}
 }
 
 export default useUsersQuery;
