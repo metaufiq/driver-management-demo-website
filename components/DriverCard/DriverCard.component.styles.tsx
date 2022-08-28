@@ -6,7 +6,7 @@ export const Container = styled.div`
   display:inline-block;
 `
 
-export const GrayText = styled.p`
+const GrayText = styled.p`
   color: #c6c6c6;
 `
 
