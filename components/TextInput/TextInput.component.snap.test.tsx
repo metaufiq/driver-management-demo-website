@@ -1,3 +1,4 @@
+import { themes } from "../../configs/themes";
 import { assertSnapshots } from "../../test";
 import { Configs } from "../../test/index.types";
 import TextInput from "./";
@@ -13,11 +14,15 @@ describe('TextInputSnapshot', () => {
   const configs:Configs<Props> = [
     {
       props: mockProps,
-      desc: 'should render normal TextInput without id'
+      desc: 'should render normal TextInput',
+      useTheme: true,
+      theme: themes
     },
     {
-      props: { ...mockProps, id: 'id'},
-      desc: 'should render normal TextInput'
+      props: { ...mockProps, leftIcon: <div/>},
+      desc: 'should render normal TextInput with left icon',
+      useTheme: true,
+      theme: themes
     }
   ];
 

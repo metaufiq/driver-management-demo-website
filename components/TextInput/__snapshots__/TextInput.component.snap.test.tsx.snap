@@ -7,7 +7,6 @@ exports[`TextInputSnapshot should render normal TextInput 1`] = `
   >
     <input
       class="sc-bczRLJ gBziFm"
-      id="id"
       placeholder="placeholder"
       type="password"
     />
@@ -15,11 +14,16 @@ exports[`TextInputSnapshot should render normal TextInput 1`] = `
 </DocumentFragment>
 `;
 
-exports[`TextInputSnapshot should render normal TextInput without id 1`] = `
+exports[`TextInputSnapshot should render normal TextInput with left icon 1`] = `
 <DocumentFragment>
   <div
     class="sc-gsnTZi hEqjwc"
   >
+    <div
+      class="sc-dkzDqf gZKilg"
+    >
+      <div />
+    </div>
     <input
       class="sc-bczRLJ gBziFm"
       placeholder="placeholder"
