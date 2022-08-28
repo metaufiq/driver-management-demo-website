@@ -4,12 +4,12 @@ import {
   StyledComponentProps 
 } from './NavigationContainer.component.types'
 
-export const Navbar = styled.div`
+export const Navbar = styled.div<StyledComponentProps>`
     display: flex;
-    justify-content: space-between;
+    justify-content: ${({visible})=>visible ? 'flex-end': 'space-between'};
     align-items: center;
     height: 3.5rem;
-    margin: 0 2rem;
+    padding: 0 2rem;
     background-color: white;
     @media (min-width: 768px) {
       justify-content: flex-end;
@@ -26,8 +26,8 @@ export const UserName = styled(InlineText)`
 `
 
 export const MenuIconOpen = styled.a<StyledComponentProps>`
-    display: flex;
-    justify-content: start;
+    display: ${({visible})=>visible ? 'none': 'flex'};
+    justify-content: center;
     font-size: 1.5rem;
     color: ${({theme})=>theme.colors.primary};
     @media (min-width: 768px) {
@@ -60,7 +60,7 @@ export const MenuList = styled.div<StyledComponentProps>`
     background-color: white;
     @media (max-width: 768px) {
       width: 100%;
-      max-height: ${({visible}) => visible ? 0 : '200px'};
+      max-height: ${({visible}) => visible ? '200px' : 0};
       transition: all 0.3s ease-out;
     }
 `

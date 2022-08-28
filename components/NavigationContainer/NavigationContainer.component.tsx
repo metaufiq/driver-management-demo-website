@@ -31,13 +31,13 @@ const NavigationContainer: Component<Props> = (props) => {
     
     return (
         <>
-            <Navbar>
-                <MenuIconOpen 
-                  visible={visible} 
+            <Navbar visible={visible}>
+                <MenuIconOpen
+                  visible={visible}
                   href="#" 
                   onClick={_showSidebar(setVisible, true)}
                 >
-                    {visible &&  <FaBars /> }
+                  <FaBars />
                 </MenuIconOpen>
                 <UserContainer>
                   <InlineText>Hello,</InlineText>

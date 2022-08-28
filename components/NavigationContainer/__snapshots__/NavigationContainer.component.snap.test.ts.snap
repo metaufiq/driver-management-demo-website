@@ -3,10 +3,10 @@
 exports[`NavigationContainerSnapshot should render navigation container 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bczRLJ hFelsa"
+    class="sc-bczRLJ jYMOus"
   >
     <a
-      class="sc-hKMtZM hLxIvl"
+      class="sc-hKMtZM hVaphc"
       href="#"
     >
       <svg
@@ -48,7 +48,7 @@ exports[`NavigationContainerSnapshot should render navigation container 1`] = `
     class="sc-papXJ iimcul"
   >
     <div
-      class="sc-gKXOVf ghhiul"
+      class="sc-gKXOVf fhlsoz"
     >
       <a
         class="sc-jSMfEi kGXgxn"
@@ -156,10 +156,10 @@ exports[`NavigationContainerSnapshot should render navigation container 1`] = `
 exports[`NavigationContainerSnapshot should render navigation container with close icon 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bczRLJ hFelsa"
+    class="sc-bczRLJ jYMOus"
   >
     <a
-      class="sc-hKMtZM hLxIvl"
+      class="sc-hKMtZM hVaphc"
       href="#"
     >
       <svg
@@ -201,7 +201,7 @@ exports[`NavigationContainerSnapshot should render navigation container with clo
     class="sc-papXJ iimcul"
   >
     <div
-      class="sc-gKXOVf ghhiul"
+      class="sc-gKXOVf fhlsoz"
     >
       <a
         class="sc-jSMfEi kGXgxn"
