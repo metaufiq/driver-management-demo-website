@@ -6,7 +6,6 @@ import { HiOutlinePlus } from 'react-icons/hi';
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 
 import { NavigationButton, PrimaryButton } from '../../components/Button';
-import DriverCard from '../../components/DriverCard';
 import TextInput from '../../components/TextInput';
 import { PAGE } from '../../constants';
 import useUsers from '../../hooks/useUsers';
@@ -16,12 +15,10 @@ import {
   HeaderDescription, 
   HeaderTitle, 
   HeaderUtilsContainer, 
-  ListUserContainer, 
-  PaginationContainer, 
-  SpinnerContainer
+  PaginationContainer,
 } from './DriverManagement.component.styles';
 import { SetPageIndex, SetSearchInput } from './DriverManagement.component.types';
-import Spinner from '../../components/Spinner';
+import ListDriver from '../../components/ListDriver/ListDriver.component';
 
 const _onInputSearch = (setSearchInput: SetSearchInput)=>(event: React.ChangeEvent<HTMLInputElement>)=>{
   setSearchInput(event.target.value)
@@ -36,7 +33,7 @@ const _onPrevPage = (setPageIndex: SetPageIndex)=>()=>{
 }
 
 const DriverManagement: NextPage = (props) => {
-  const {users:initialValue, error, loading} = useUsersQuery();
+  const {users:initialValue, isLoading, isError, refetch} = useUsersQuery();
   const [pageIndex, setPageIndex] = useState(1);
   const [searchInput, setSearchInput]= useState<string>();
   const {users} = useUsers({initialValue, searchInput, pageIndex})
@@ -68,18 +65,12 @@ const DriverManagement: NextPage = (props) => {
       </HeaderContainer>
 
       <br/>
-      {
-        loading ? (
-          <SpinnerContainer>
-            <Spinner size='4rem'/>
-          </SpinnerContainer>
-        ):
-        (
-          <ListUserContainer>
-           {users.map(user=>(<DriverCard user={user} key={user.username}/>))}
-          </ListUserContainer>
-        )
-      }
+      <ListDriver
+        data={users}
+        isLoading={isLoading}
+        isError={isError}
+        refetch={refetch}
+      />
 
       <PaginationContainer>
         <NavigationButton 
