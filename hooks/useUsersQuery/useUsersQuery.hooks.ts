@@ -6,7 +6,7 @@ import { SetUsers, User, Users } from "../../index.types";
 import { formatISODateToDate } from "../../utils";
 import { SetError, SetLoading } from "./useUsersQuery.hooks.types";
 
-const _convertUserToUserState = (user: UserFromAPI):User => ({
+export const _convertUserToUserState = (user: UserFromAPI):User => ({
   email: user.email,
   dob: formatISODateToDate(user.dob.date),
   firstName: user.name.first,
