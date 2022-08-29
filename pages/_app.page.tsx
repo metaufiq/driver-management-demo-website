@@ -2,10 +2,10 @@
 import type { AppProps } from 'next/app'
 import { ThemeProvider } from 'styled-components'
 import { ReactElement } from 'react'
+import NavigationContainer from '@dmd/navigation-container'
 
 import '../styles/globals.css'
 import { themes } from '../src/configs/themes'
-import NavigationContainer from '../src/components/NavigationContainer'
 
 /**
  * MyApp
