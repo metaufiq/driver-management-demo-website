@@ -1,3 +1,4 @@
+import { ReactElement } from "react";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
 import { Component } from "../../../index.types";
@@ -7,7 +8,14 @@ import { Props } from "./PaginationBar.component.types";
 
 const MINIMUM_PAGE_INDEX = 1;
 
-const PaginationBar:Component<Props> = ({onNext, onPrev, pageIndex, totalPages})=>(
+/**
+ * Pagination Bar components
+ * @param {Props} props component props 
+ * @returns {ReactElement} Pagination Bar components
+ */
+const PaginationBar:Component<Props> = (
+  {onNext, onPrev, pageIndex, totalPages}: Props
+): ReactElement=>(
   <PaginationContainer>
     <Button
       onClick={onPrev} 
