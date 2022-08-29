@@ -69,7 +69,7 @@ export const _onFetch = async (
 
 /**
  * hooks to handle users API query
- * @returns {HooksData}
+ * @returns {HooksData} hooks data and utils
  */
 const useUsersQuery = (): HooksData => {
   const [users, setUsers] = useState<Users>([]);
