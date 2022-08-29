@@ -9,7 +9,7 @@ exports[`ListDriverSnapshot should render error state list driver 1`] = `
       Terjadi Kesalahan Saat pengambilan Data Driver.
     </p>
     <button
-      class="sc-bczRLJ jMYSRp"
+      class="sc-bczRLJ iyjxpd"
     >
       Coba Lagi
     </button>
