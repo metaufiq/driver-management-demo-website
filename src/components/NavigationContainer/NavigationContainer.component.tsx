@@ -1,6 +1,6 @@
 import { ReactElement, useState } from 'react'
 
-import { Component } from '../../../index.types'
+import { Component } from '@dmd/types'
 import { NAVIGATION_MENU, USER_AVATAR_URL } from '../../constants'
 import Navbar from '../Navbar'
 import Sidebar from '../Sidebar'

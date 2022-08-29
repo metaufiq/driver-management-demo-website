@@ -1,9 +1,9 @@
-import { assertSnapshots } from "../../test";
-import { Configs } from "../../test/index.types";
+import { assertSnapshots } from "@dmd/test";
+import { Configs } from "@dmd/test/index.types";
 import ListDriver from ".";
 import { Props } from "./ListDriver.component.types";
 import { themes } from "../../configs/themes";
-import { Users } from "../../../index.types";
+import { Users } from "@dmd/types";
 
 describe('ListDriverSnapshot', () => {
 

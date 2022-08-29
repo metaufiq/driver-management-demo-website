@@ -1,7 +1,7 @@
 import { ReactElement } from "react";
 import { HiDotsHorizontal } from "react-icons/hi";
 
-import { Component } from "../../../index.types";
+import { Component } from "@dmd/types";
 import { 
   Container, 
   DescriptionContentContainer,

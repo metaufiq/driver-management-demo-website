@@ -1,4 +1,4 @@
-import { UserFromAPI } from "../../../index.types";
+import { UserFromAPI } from "@dmd/types";
 import { getListUser } from "./randomUser.api";
 import { Params } from "./randomUser.api.types";
 

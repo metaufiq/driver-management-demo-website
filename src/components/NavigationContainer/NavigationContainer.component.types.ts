@@ -1,4 +1,4 @@
-import { SetState } from "../../../index.types"
+import { SetState } from "@dmd/types"
 
 export type SetVisible = SetState<boolean>
 

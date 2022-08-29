@@ -1,6 +1,6 @@
 import { ReactElement } from "react";
 
-import { Component } from "../../../index.types";
+import { Component } from "@dmd/types";
 import { 
   CloseButtonContainer, 
   Container, 

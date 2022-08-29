@@ -1,7 +1,7 @@
 import { ReactElement } from "react";
 import {FaBars} from 'react-icons/fa'
 
-import { Component } from "../../../index.types";
+import { Component } from "@dmd/types";
 import { USER_AVATAR_URL } from "../../constants";
 import Avatar from "../Avatar";
 import { Container, IconBurgerContainer, InlineText, UserContainer, UserName } from "./Navbar.component.styles";

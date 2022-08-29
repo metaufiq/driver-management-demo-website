@@ -1,6 +1,6 @@
-import { assertSnapshots } from "../../test";
+import { assertSnapshots } from "@dmd/test";
 import Sidebar from ".";
-import { Configs } from "../../test/index.types";
+import { Configs } from "@dmd/test/index.types";
 import { Props } from "./Sidebar.component.types";
 import { themes } from "../../configs/themes";
 import { NAVIGATION_MENU } from "../../constants";

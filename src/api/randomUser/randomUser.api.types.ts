@@ -1,4 +1,4 @@
-import { UserFromAPI } from "../../../index.types"
+import { UserFromAPI } from "@dmd/types"
 
 export type GetListUserResponses = {
   results: UserFromAPI[],

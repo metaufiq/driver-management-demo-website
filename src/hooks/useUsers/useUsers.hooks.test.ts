@@ -1,5 +1,5 @@
 import React from "react";
-import { User } from "../../../index.types";
+import { User } from "@dmd/types";
 import { useInnit, usePage, useSearch, _filterByKeys } from "./useUsers.hooks";
 import useUsers from ".";
 

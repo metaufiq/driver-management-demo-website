@@ -1,4 +1,4 @@
-import { User } from "../../../index.types"
+import { User } from "@dmd/types"
 
 export type AvatarProps ={
   picture: User['picture']

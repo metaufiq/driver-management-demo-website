@@ -1,7 +1,7 @@
 import NavigationContainer from ".";
 import { themes } from "../../configs/themes";
-import { assertSnapshots } from "../../test";
-import { Configs } from "../../test/index.types";
+import { assertSnapshots } from "@dmd/test";
+import { Configs } from "@dmd/test/index.types";
 
 jest.mock('next/router', ()=>({
   ...jest.requireActual('next/router'),

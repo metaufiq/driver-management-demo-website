@@ -1,4 +1,4 @@
-import { User, Users } from "../../../index.types";
+import { User, Users } from "@dmd/types";
 
 
 export type FilterKey =  'firstName';
