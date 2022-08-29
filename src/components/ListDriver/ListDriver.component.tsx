@@ -38,7 +38,7 @@ const ListDriver:Component<Props> = (
 
   return(
     <DataContainer>
-      {data?.map(user=>(<DriverCard user={user} key={user.username}/>))}
+      {data?.map((user,index)=>(<DriverCard user={user} key={index}/>))}
     </DataContainer>
   )
 }
