@@ -1,4 +1,4 @@
-import { SetState } from "../../index.types";
+import { SetState } from "../../../index.types";
 
 export type SetLoading = SetState<boolean>
 

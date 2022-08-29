@@ -1,6 +1,6 @@
 import { HiDotsHorizontal } from "react-icons/hi";
 
-import { Component } from "../../index.types";
+import { Component } from "../../../index.types";
 import Avatar from "../Avatar";
 import { 
   Container, 

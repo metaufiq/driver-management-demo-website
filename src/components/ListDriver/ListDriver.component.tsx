@@ -1,4 +1,4 @@
-import { Component } from "../../index.types"
+import { Component } from "../../../index.types"
 import Button from "../Button"
 import DriverCard from "../DriverCard"
 import Spinner from "../Spinner"

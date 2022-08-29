@@ -2,7 +2,7 @@ import React from "react";
 
 import api from "../../api";
 import { User as UserFromAPI } from "../../api/randomUser/randomUser.api.types";
-import { User } from "../../index.types";
+import { User } from "../../../index.types";
 import { _asyncInnit, _convertUserToUserState, _getListUser } from "./useUsersQuery.hooks";
 import useUsersQuery from '.'
 

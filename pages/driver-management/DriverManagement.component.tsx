@@ -4,13 +4,13 @@ import { useState } from 'react';
 import { FaSearch } from 'react-icons/fa';
 import { HiOutlinePlus } from 'react-icons/hi';
 
-import { PAGE } from '../../constants';
-import useUsers from '../../hooks/useUsers';
-import useUsersQuery from '../../hooks/useUsersQuery';
-import TextInput from '../../components/TextInput';
-import ListDriver from '../../components/ListDriver';
-import PaginationBar from '../../components/PaginationBar';
-import Button from '../../components/Button';
+import { PAGE } from '../../src/constants';
+import useUsers from '../../src/hooks/useUsers';
+import useUsersQuery from '../../src/hooks/useUsersQuery';
+import TextInput from '../../src/components/TextInput';
+import ListDriver from '../../src/components/ListDriver';
+import PaginationBar from '../../src/components/PaginationBar';
+import Button from '../../src/components/Button';
 import { 
   HeaderContainer,
   HeaderDescription, 

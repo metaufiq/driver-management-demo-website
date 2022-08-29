@@ -1,4 +1,4 @@
-import { User } from "../../index.types";
+import { User } from "../../../index.types";
 
 
 export type FilterKey =  'firstName';

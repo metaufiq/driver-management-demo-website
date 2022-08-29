@@ -1,4 +1,4 @@
-import { mockFunctionSetState } from "../../test";
+import { mockFunctionSetState } from "../../src/test";
 import { _onInputSearch, _onNextPage, _onPrevPage } from "./DriverManagement.component";
 
 describe('#_onInputSearch', () => {

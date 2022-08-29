@@ -15,7 +15,7 @@ const customJestConfig = {
     '^@/pages/(.*)$': '<rootDir>/pages/$1',
   },
   coveragePathIgnorePatterns: [
-    "<rootDir>/configs/api/"
+    "<rootDir>/src/configs/api/"
   ],
   testEnvironment: 'jest-environment-jsdom',
 }

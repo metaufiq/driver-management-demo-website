@@ -1,6 +1,6 @@
 import {render} from '@testing-library/react';
 import { ThemeProvider } from 'styled-components';
-import { Component as ComponentType, SetState } from '../index.types';
+import { Component as ComponentType, SetState } from '../../index.types';
 
 import { Config, Configs } from "./index.types"
 

@@ -2,7 +2,7 @@ import { useState } from 'react'
 import {FaBars} from 'react-icons/fa'
 import { useRouter } from 'next/router'
 
-import { Component } from '../../index.types'
+import { Component } from '../../../index.types'
 import { 
   ChildContainer,
   ContentContainer, 

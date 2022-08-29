@@ -1,16 +1,16 @@
-import { assertSnapshots } from "../../test";
-import { Configs } from "../../test/index.types";
-import { themes } from "../../configs/themes";
+import { assertSnapshots } from "../../src/test";
+import { Configs } from "../../src/test/index.types";
+import { themes } from "../../src/configs/themes";
 import DriverManagement from "./index.page";
 
-jest.mock('../../components/Button', ()=>'Button')
-jest.mock('../../components/PaginationBar', ()=>'PaginationBar')
-jest.mock('../../components/ListDriver', ()=>'ListDriver')
-jest.mock('../../components/TextInput', ()=>'TextInput')
-jest.mock('../../hooks/useUsers', ()=>()=>({
+jest.mock('../../src/components/Button', ()=>'Button')
+jest.mock('../../src/components/PaginationBar', ()=>'PaginationBar')
+jest.mock('../../src/components/ListDriver', ()=>'ListDriver')
+jest.mock('../../src/components/TextInput', ()=>'TextInput')
+jest.mock('../../src/hooks/useUsers', ()=>()=>({
   users: [{key: 'example one of users key'}]
 }))
-jest.mock('../../hooks/useUsersQuery', ()=>()=>({
+jest.mock('../../src/hooks/useUsersQuery', ()=>()=>({
   users: [{key: 'example one of users api key'}]
 }))
 

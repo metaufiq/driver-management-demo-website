@@ -1,4 +1,4 @@
-import { Users } from "../../index.types"
+import { Users } from "../../../index.types"
 
 
 export type Props = {

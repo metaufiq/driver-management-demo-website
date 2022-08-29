@@ -3,7 +3,7 @@ import { Configs } from "../../test/index.types";
 import ListDriver from ".";
 import { Props } from "./ListDriver.component.types";
 import { themes } from "../../configs/themes";
-import { Users } from "../../index.types";
+import { Users } from "../../../index.types";
 
 describe('ListDriverSnapshot', () => {
 

@@ -1,7 +1,7 @@
 // import original module declarations
 import 'styled-components';
 
-import { themes } from './configs/themes';
+import { themes } from './src/configs/themes';
 
 type ThemeInterface = typeof themes;
 

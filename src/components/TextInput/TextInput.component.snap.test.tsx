@@ -1,7 +1,7 @@
 import { themes } from "../../configs/themes";
 import { assertSnapshots } from "../../test";
 import { Configs } from "../../test/index.types";
-import TextInput from "./";
+import TextInput from ".";
 import { Props } from "./TextInput.component.types";
 
 describe('TextInputSnapshot', () => {

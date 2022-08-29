@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { USER_PER_PAGE } from "../../constants";
 
-import { SetUsers, Users } from "../../index.types";
-import { User } from "../../index.types";
+import { SetUsers, Users } from "../../../index.types";
+import { User } from "../../../index.types";
 import { FilterKey, Params } from "./useUsers.hooks.types";
 
 
