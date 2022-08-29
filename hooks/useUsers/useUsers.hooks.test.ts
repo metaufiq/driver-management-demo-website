@@ -1,6 +1,7 @@
 import React from "react";
-import { User, Users } from "../../index.types";
-import useUsers, { useInnit, usePage, useSearch, _filterByKeys } from "./useUsers.hooks";
+import { User } from "../../index.types";
+import { useInnit, usePage, useSearch, _filterByKeys } from "./useUsers.hooks";
+import useUsers from ".";
 
 const mockedUser: User ={
   dob: '12/10/1998',

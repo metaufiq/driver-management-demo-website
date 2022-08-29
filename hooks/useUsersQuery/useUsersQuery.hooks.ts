@@ -5,6 +5,7 @@ import api from "../../api";
 import { SetUsers, User, Users } from "../../index.types";
 import { formatISODateToDate } from "../../utils";
 import { SetError, SetLoading } from "./useUsersQuery.hooks.types";
+import { TOTAL_USER } from "../../constants";
 
 export const _convertUserToUserState = (user: UserFromAPI):User => ({
   email: user.email,
@@ -37,7 +38,7 @@ export const _asyncInnit = async (
     setLoading(true)
     setError(false)
 
-    const users = await _getListUser({results:30})
+    const users = await _getListUser({results:TOTAL_USER})
 
     setUsers(users)
     localStorage.setItem('users', JSON.stringify(users))
