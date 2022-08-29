@@ -3,10 +3,6 @@ import { Configs } from "../../src/test/index.types";
 import { themes } from "../../src/configs/themes";
 import DriverManagement from "./index.page";
 
-jest.mock('../../src/components/Button', ()=>'Button')
-jest.mock('../../src/components/PaginationBar', ()=>'PaginationBar')
-jest.mock('../../src/components/ListDriver', ()=>'ListDriver')
-jest.mock('../../src/components/TextInput', ()=>'TextInput')
 jest.mock('../../src/hooks/useUsers', ()=>()=>({
   users: [{key: 'example one of users key'}]
 }))
