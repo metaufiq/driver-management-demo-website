@@ -30,4 +30,7 @@ export const HeaderUtilsContainer = styled.div`
   @media (max-width: 768px) {
       flex-direction: column;
   }
+  @media (max-width: 1200px) and (min-width: 1000px) {
+      flex-direction: column;
+  }
 `
