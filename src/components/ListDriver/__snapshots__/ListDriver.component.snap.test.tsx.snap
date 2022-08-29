@@ -3,7 +3,7 @@
 exports[`ListDriverSnapshot should render error state list driver 1`] = `
 <DocumentFragment>
   <div
-    class="sc-crXcEl RnGTA"
+    class="sc-ksZaOG cNQmIU"
   >
     <p>
       Terjadi Kesalahan Saat pengambilan Data Driver.
@@ -20,10 +20,10 @@ exports[`ListDriverSnapshot should render error state list driver 1`] = `
 exports[`ListDriverSnapshot should render loading state list driver 1`] = `
 <DocumentFragment>
   <div
-    class="sc-iqcoie kFsmBA"
+    class="sc-breuTD gNnOMM"
   >
     <div
-      class="sc-kDDrLX cjRdeF"
+      class="sc-evZas cVQZXf"
     />
   </div>
 </DocumentFragment>
@@ -32,28 +32,28 @@ exports[`ListDriverSnapshot should render loading state list driver 1`] = `
 exports[`ListDriverSnapshot should render normal state list driver 1`] = `
 <DocumentFragment>
   <div
-    class="sc-evZas hJMyXD"
+    class="sc-hAZoDl jsEuU"
   >
     <div
-      class="sc-dkzDqf kFGQEb"
+      class="sc-gsnTZi byoYPo"
     >
       <div
-        class="sc-eCYdqJ cOzWIu"
+        class="sc-hKMtZM dfTmvn"
       >
         <div>
           <p
-            class="sc-hKMtZM sc-jSMfEi cHivdW dtQlSY"
+            class="sc-dkzDqf sc-eCYdqJ bkDjgV geixOC"
           >
             Driver ID
           </p>
           <p
-            class="sc-gKXOVf iKGcfe"
+            class="sc-jSMfEi eQOOWD"
           >
             userName
           </p>
         </div>
         <div
-          class="sc-iBkjds eUfGnI"
+          class="sc-gKXOVf kSkZUi"
         >
           <svg
             fill="currentColor"
@@ -70,65 +70,77 @@ exports[`ListDriverSnapshot should render normal state list driver 1`] = `
           </svg>
         </div>
       </div>
-      <img
-        class="sc-gsnTZi hFMZzo"
-        src="profile_picture_url"
-      />
       <div
-        class="sc-jqUVSM ifauud"
+        class="sc-papXJ hIXhCT"
       >
-        <p
-          class="sc-hKMtZM sc-ftvSup cHivdW jJhkwV"
+        <img
+          class="sc-crXcEl jjACuZ"
+          src="profile_picture_url"
+        />
+        <div
+          class="sc-jqUVSM epcwnv"
         >
-          Nama Driver
-        </p>
-        <p
-          class="sc-papXJ kUVpcZ"
-        >
-          firstName, lastName
-        </p>
-      </div>
-      <div
-        class="sc-jqUVSM ifauud"
-      >
-        <p
-          class="sc-hKMtZM sc-ftvSup cHivdW jJhkwV"
-        >
-          Telepon
-        </p>
-        <p
-          class="sc-papXJ kUVpcZ"
-        >
-          098123123123
-        </p>
-      </div>
-      <div
-        class="sc-jqUVSM ifauud"
-      >
-        <p
-          class="sc-hKMtZM sc-ftvSup cHivdW jJhkwV"
-        >
-          Email
-        </p>
-        <p
-          class="sc-papXJ kUVpcZ"
-        >
-          email@email.com
-        </p>
-      </div>
-      <div
-        class="sc-jqUVSM ifauud"
-      >
-        <p
-          class="sc-hKMtZM sc-ftvSup cHivdW jJhkwV"
-        >
-          Tanggal Lahir
-        </p>
-        <p
-          class="sc-papXJ kUVpcZ"
-        >
-          12/10/1998
-        </p>
+          <div
+            class="sc-kDDrLX UBIxm"
+          >
+            <p
+              class="sc-dkzDqf sc-iBkjds bkDjgV fDTFxa"
+            >
+              Nama Driver
+            </p>
+            <p
+              class="sc-ftvSup qzzlk"
+            >
+              firstName, lastName
+            </p>
+          </div>
+          <div
+            class="sc-kDDrLX UBIxm"
+          >
+            <p
+              class="sc-dkzDqf sc-iBkjds bkDjgV fDTFxa"
+            >
+              Telepon
+            </p>
+            <p
+              class="sc-ftvSup qzzlk"
+            >
+              098123123123
+            </p>
+          </div>
+          <div
+            class="sc-iqcoie fmUYHX"
+          >
+            <div
+              class="sc-kDDrLX UBIxm"
+            >
+              <p
+                class="sc-dkzDqf sc-iBkjds bkDjgV fDTFxa"
+              >
+                Email
+              </p>
+              <p
+                class="sc-ftvSup qzzlk"
+              >
+                email@email.com
+              </p>
+            </div>
+            <div
+              class="sc-kDDrLX UBIxm"
+            >
+              <p
+                class="sc-dkzDqf sc-iBkjds bkDjgV fDTFxa"
+              >
+                Tanggal Lahir
+              </p>
+              <p
+                class="sc-ftvSup qzzlk"
+              >
+                12/10/1998
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

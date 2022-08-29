@@ -3,22 +3,22 @@
 exports[`DriverCardSnapshot should render normal driver management page 1`] = `
 <DocumentFragment>
   <div
-    class="sc-fEOsli lkBpdb"
+    class="sc-dIouRR jXOnOq"
   >
     <div>
       <h1
-        class="sc-bjUoiL dZsOTZ"
+        class="sc-hHLeRK cXweQi"
       >
         DRIVER MANAGEMENT
       </h1>
       <p
-        class="sc-idiyUo gOnmIG"
+        class="sc-dmRaPn dUVFjh"
       >
         Data Driver bekerja dengan Anda.
       </p>
     </div>
     <div
-      class="sc-dIouRR jfxOxy"
+      class="sc-kgflAQ BZtzH"
     >
       <div
         class="sc-gsnTZi hEqjwc"
@@ -71,26 +71,26 @@ exports[`DriverCardSnapshot should render normal driver management page 1`] = `
   </div>
   <br />
   <div
-    class="sc-hAZoDl jsEuU"
+    class="sc-bjUoiL fghqXP"
   >
     <div
-      class="sc-jSMfEi jzBCoP"
+      class="sc-eCYdqJ iywVtZ"
     >
       <div
-        class="sc-iBkjds fORsaH"
+        class="sc-gKXOVf bmManZ"
       >
         <div>
           <p
-            class="sc-gKXOVf sc-ftvSup bmicKQ rYvLQ"
+            class="sc-jSMfEi sc-iBkjds iqvdNZ hxEleX"
           >
             Driver ID
           </p>
           <p
-            class="sc-papXJ hKnTaG"
+            class="sc-ftvSup BYxNv"
           />
         </div>
         <div
-          class="sc-jqUVSM csvwJH"
+          class="sc-papXJ hdbybu"
         >
           <svg
             fill="currentColor"
@@ -107,63 +107,75 @@ exports[`DriverCardSnapshot should render normal driver management page 1`] = `
           </svg>
         </div>
       </div>
-      <img
-        class="sc-eCYdqJ jlFQtZ"
-      />
       <div
-        class="sc-crXcEl bBRwIU"
+        class="sc-iqcoie dOItqw"
       >
-        <p
-          class="sc-gKXOVf sc-kDDrLX bmicKQ gavLsa"
-        >
-          Nama Driver
-        </p>
-        <p
-          class="sc-iqcoie ehSIaG"
-        >
-          , 
-        </p>
-      </div>
-      <div
-        class="sc-crXcEl bBRwIU"
-      >
-        <p
-          class="sc-gKXOVf sc-kDDrLX bmicKQ gavLsa"
-        >
-          Telepon
-        </p>
-        <p
-          class="sc-iqcoie ehSIaG"
+        <img
+          class="sc-ksZaOG dfRWDh"
         />
-      </div>
-      <div
-        class="sc-crXcEl bBRwIU"
-      >
-        <p
-          class="sc-gKXOVf sc-kDDrLX bmicKQ gavLsa"
+        <div
+          class="sc-crXcEl eEnHtW"
         >
-          Email
-        </p>
-        <p
-          class="sc-iqcoie ehSIaG"
-        />
-      </div>
-      <div
-        class="sc-crXcEl bBRwIU"
-      >
-        <p
-          class="sc-gKXOVf sc-kDDrLX bmicKQ gavLsa"
-        >
-          Tanggal Lahir
-        </p>
-        <p
-          class="sc-iqcoie ehSIaG"
-        />
+          <div
+            class="sc-evZas ddeZRc"
+          >
+            <p
+              class="sc-jSMfEi sc-jqUVSM iqvdNZ fYuGPZ"
+            >
+              Nama Driver
+            </p>
+            <p
+              class="sc-kDDrLX gQtTej"
+            >
+              , 
+            </p>
+          </div>
+          <div
+            class="sc-evZas ddeZRc"
+          >
+            <p
+              class="sc-jSMfEi sc-jqUVSM iqvdNZ fYuGPZ"
+            >
+              Telepon
+            </p>
+            <p
+              class="sc-kDDrLX gQtTej"
+            />
+          </div>
+          <div
+            class="sc-breuTD hYHGIL"
+          >
+            <div
+              class="sc-evZas ddeZRc"
+            >
+              <p
+                class="sc-jSMfEi sc-jqUVSM iqvdNZ fYuGPZ"
+              >
+                Email
+              </p>
+              <p
+                class="sc-kDDrLX gQtTej"
+              />
+            </div>
+            <div
+              class="sc-evZas ddeZRc"
+            >
+              <p
+                class="sc-jSMfEi sc-jqUVSM iqvdNZ fYuGPZ"
+              >
+                Tanggal Lahir
+              </p>
+              <p
+                class="sc-kDDrLX gQtTej"
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
   <div
-    class="sc-fnykZs eFjA-dh"
+    class="sc-idiyUo eqxcDt"
   >
     <button
       class="sc-hKMtZM kBHTJJ"
