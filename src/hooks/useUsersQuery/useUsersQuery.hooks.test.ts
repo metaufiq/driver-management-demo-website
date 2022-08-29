@@ -3,7 +3,7 @@ import React from "react";
 import api from "../../api";
 import { User as UserFromAPI } from "../../api/randomUser/randomUser.api.types";
 import { User } from "../../../index.types";
-import { _asyncInnit, _convertUserToUserState, _getListUser } from "./useUsersQuery.hooks";
+import { _onFetch, _convertUserToUserState, _getListUser } from "./useUsersQuery.hooks";
 import useUsersQuery from '.'
 
 const mockedUserAPI: UserFromAPI ={
@@ -78,7 +78,7 @@ describe('#_getListUser', () => {
   })
 });
 
-describe('#_asyncInnit', () => {
+describe('#_onFetch', () => {
   it('should set user when get API response', async ()=>{
     const setUsers = jest.fn()
     const setLoading = jest.fn()
@@ -96,7 +96,7 @@ describe('#_asyncInnit', () => {
     // @ts-ignore: mock implementation
     api.randomUser.getListUser.mockImplementationOnce(()=>({results:mockedAPIResult}))
 
-    await _asyncInnit(setUsers, setLoading, setError)
+    await _onFetch(setUsers, setLoading, setError)
     
     expect(setLoading).nthCalledWith(1, true)
     expect(setError).toBeCalledWith(false)
@@ -108,6 +108,7 @@ describe('#_asyncInnit', () => {
 describe('#useUserQuery', () => {
   it('should return all the necessary hooks method and variable', async ()=>{
     React.useState = jest.fn();
+    // eslint-disable-next-line require-jsdoc
     const mockFetch = ()=>{}
     React.useEffect = jest.fn(mockFetch)
     const isError = false;

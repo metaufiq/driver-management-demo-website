@@ -4,9 +4,14 @@ import { User as UserFromAPI, Params as APIParams } from "../../api/randomUser/r
 import api from "../../api";
 import { SetUsers, User, Users } from "../../../index.types";
 import { formatISODateToDate } from "../../utils";
-import { SetError, SetLoading } from "./useUsersQuery.hooks.types";
+import { HooksData, SetError, SetLoading } from "./useUsersQuery.hooks.types";
 import { TOTAL_USER } from "../../constants";
 
+/**
+ * convert user from API to converted user to be consumed by hooks consumer
+ * @param {UserFromAPI} user user from API
+ * @returns {User} converted user
+ */
 export const _convertUserToUserState = (user: UserFromAPI):User => ({
   email: user.email,
   dob: formatISODateToDate(user.dob.date),
@@ -17,6 +22,11 @@ export const _convertUserToUserState = (user: UserFromAPI):User => ({
   profilePicture: user.picture.medium
 })
 
+/**
+ * async function to get users
+ * @param {Params} params API params
+ * @returns {Promise<Users>} promise to get users
+ */
 export const _getListUser = async (params: APIParams):Promise<Users> => {
   const stringifyUsers = localStorage.getItem('users')
   if (stringifyUsers) {
@@ -29,11 +39,18 @@ export const _getListUser = async (params: APIParams):Promise<Users> => {
   return users;
 }
 
-export const _asyncInnit = async (
+/**
+ * function that fetching data
+ * @param {SetUsers} setUsers setter state for users data
+ * @param {SetLoading} setLoading setter state for loading condition
+ * @param {SetError} setError setter state for error condition
+ * @returns {Promise<void>} Promise fetch operation
+ */
+export const _onFetch = async (
   setUsers: SetUsers, 
   setLoading: SetLoading, 
   setError: SetError
-)=>{
+): Promise<void>=>{
   try {
     setLoading(true)
     setError(false)
@@ -50,14 +67,19 @@ export const _asyncInnit = async (
 
 }
 
-
-const useUsersQuery = () => {
+/**
+ * hooks to handle users API query
+ * @returns {HooksData}
+ */
+const useUsersQuery = (): HooksData => {
   const [users, setUsers] = useState<Users>([]);
   const [isLoading, setLoading] = useState(false);
   const [isError, setError] = useState(false);
+  // eslint-disable-next-line require-jsdoc
   const fetch = ()=>{
-    _asyncInnit(setUsers, setLoading, setError)
+    _onFetch(setUsers, setLoading, setError)
   };
+
   useEffect(fetch,[])
 
   return {users, isLoading, isError, refetch: fetch}
