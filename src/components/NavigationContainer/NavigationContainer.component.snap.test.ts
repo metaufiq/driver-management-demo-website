@@ -1,4 +1,3 @@
-import React from "react";
 import NavigationContainer from ".";
 import { themes } from "../../configs/themes";
 import { assertSnapshots } from "../../test";
@@ -19,17 +18,7 @@ describe('NavigationContainerSnapshot', () => {
       desc: 'should render navigation container',
       useTheme: true,
       theme: themes,
-    },
-    {
-      desc: 'should render navigation container with close icon',
-      useTheme: true,
-      theme: themes,
-      beforeTest:()=>{
-        React.useState = jest.fn();
-        // @ts-ignore: mock implementation
-        React.useState.mockImplementation(() => [true, ()=>{}]);
-      }
-    },
+    }
   ];
 
   assertSnapshots(NavigationContainer, configs);

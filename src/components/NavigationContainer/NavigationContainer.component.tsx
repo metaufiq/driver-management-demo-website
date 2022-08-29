@@ -1,18 +1,15 @@
 import { ReactElement, useState } from 'react'
-import { useRouter } from 'next/router'
 
 import { Component } from '../../../index.types'
-import { 
-  ChildContainer,
-  ContentContainer,
-  MenuIconClose, 
-  MenuItemLinks, 
-  MenuItems, 
-  MenuList,
-} from './NavigationContainer.component.styles'
-import { Props, SetVisible } from './NavigationContainer.component.types'
 import { NAVIGATION_MENU, USER_AVATAR_URL } from '../../constants'
 import Navbar from '../Navbar'
+import Sidebar from '../Sidebar'
+import { 
+  ChildContainer,
+  ContentContainer
+} from './NavigationContainer.component.styles'
+import { Props, SetVisible } from './NavigationContainer.component.types'
+
 
 /**
  * function to set sidebar visibility
@@ -29,9 +26,6 @@ export const _showSidebar = (setVisible:SetVisible, visible: boolean): VoidFunct
  * @returns {ReactElement} Text Input components
  */
 const NavigationContainer: Component<Props> = (props: Props):ReactElement => {
-    const router = useRouter()
-    const isRootRoute = router.route === '/';
-    
     const [visible, setVisible] = useState(false)
     
     return (
@@ -43,26 +37,11 @@ const NavigationContainer: Component<Props> = (props: Props):ReactElement => {
             />
 
             <ContentContainer>
-              <MenuList visible={visible}>
-                <MenuIconClose href="#" onClick={_showSidebar(setVisible, false)}>
-                    Close
-                </MenuIconClose>
-                  {NAVIGATION_MENU.map((item, index) => {
-                      return (
-                          <MenuItems 
-                            key={index} 
-                            active={
-                              router.route === item.path ||
-                              (isRootRoute && item.isRoot!)
-                            }>
-                              <MenuItemLinks href={item.path}>
-                                  {item.icon}
-                                  <span style={{marginLeft: '16px'}}>{item.title}</span>
-                              </MenuItemLinks>
-                          </MenuItems>
-                      )
-                  })}
-              </MenuList>
+              <Sidebar
+                visible={visible}
+                navigationMenu={NAVIGATION_MENU}
+                onClose={_showSidebar(setVisible, false)}
+              />
               <ChildContainer>
                 {props.children}
               </ChildContainer>
