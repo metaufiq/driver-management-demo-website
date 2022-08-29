@@ -2,16 +2,19 @@ import { ReactElement } from "react";
 import { HiDotsHorizontal } from "react-icons/hi";
 
 import { Component } from "../../../index.types";
-import Avatar from "../Avatar";
 import { 
   Container, 
-  ContentContainer,
+  DescriptionContentContainer,
   Description,
   DriverIDTitle,
   DriverIDValue, 
   Header,
   ThreeDotsContainer, 
-  Title 
+  Title, 
+  ContentContainer,
+  Avatar,
+  HideMobileContainer,
+  DescriptionContainer
 } from "./DriverCard.component.styles";
 
 import { Props } from "./DriverCard.component.types";
@@ -33,24 +36,30 @@ const DriverCard:Component<Props> = ({user}):ReactElement=>{
         <HiDotsHorizontal/>
       </ThreeDotsContainer>
     </Header>
-    <Avatar
-      src={user.profilePicture}
-    />
     <ContentContainer>
-      <Title>Nama Driver</Title>
-      <Description>{user.firstName}, {user.lastName}</Description>
-    </ContentContainer>
-    <ContentContainer>
-      <Title>Telepon</Title>
-      <Description>{user.phone}</Description>
-    </ContentContainer>
-    <ContentContainer>
-      <Title>Email</Title>
-      <Description>{user.email}</Description>
-    </ContentContainer>
-    <ContentContainer>
-      <Title>Tanggal Lahir</Title>
-      <Description>{user.dob}</Description>
+      <Avatar
+        src={user.profilePicture}
+      />
+      <DescriptionContainer>
+        <DescriptionContentContainer>
+          <Title>Nama Driver</Title>
+          <Description>{user.firstName}, {user.lastName}</Description>
+        </DescriptionContentContainer>
+        <DescriptionContentContainer>
+          <Title>Telepon</Title>
+          <Description>{user.phone}</Description>
+        </DescriptionContentContainer>
+        <HideMobileContainer>
+          <DescriptionContentContainer>
+            <Title>Email</Title>
+            <Description>{user.email}</Description>
+          </DescriptionContentContainer>
+          <DescriptionContentContainer>
+            <Title>Tanggal Lahir</Title>
+            <Description>{user.dob}</Description>
+          </DescriptionContentContainer>
+        </HideMobileContainer>
+      </DescriptionContainer>
     </ContentContainer>
   </Container>)
 }

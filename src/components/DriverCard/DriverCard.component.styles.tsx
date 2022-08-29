@@ -45,16 +45,49 @@ export const ThreeDotsContainer = styled.div`
 export const Title = styled(GrayText)`
   font-size: 0.5rem;
   margin: 0;
+  @media (max-width: 768px) {
+    font-size: 0.7rem;
+  }
 `
 
 export const Description = styled.p`
   margin: 0;
-  font-size: 0.8rem;
+  @media (max-width: 768px) {
+    font-size: 1.2rem;
+  }
 `
 
 export const ContentContainer = styled.div`
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: row;
+  }
+`
+
+export const DescriptionContainer = styled.div`
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+`
+
+export const DescriptionContentContainer = styled.div`
   padding: 0.5rem 1rem;
   display: flex;
   flex-direction: column;
+`
+
+export const HideMobileContainer = styled.div`
+  @media (max-width: 768px) {
+    display: none;
+  }
+`
+
+export const Avatar = styled.img`
+  border-radius: 50%;
+  padding: 1rem;
+  @media (max-width: 768px) {
+    flex-grow: 0.5;
+    padding: 2rem;
+  }
 `
 

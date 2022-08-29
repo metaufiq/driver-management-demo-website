@@ -3,25 +3,25 @@
 exports[`DriverCardSnapshot should render normal driver card 1`] = `
 <DocumentFragment>
   <div
-    class="sc-gsnTZi byoYPo"
+    class="sc-bczRLJ bZLAfS"
   >
     <div
-      class="sc-hKMtZM dfTmvn"
+      class="sc-dkzDqf kwBbVE"
     >
       <div>
         <p
-          class="sc-dkzDqf sc-eCYdqJ bkDjgV geixOC"
+          class="sc-gsnTZi sc-hKMtZM FhkDi eciUyH"
         >
           Driver ID
         </p>
         <p
-          class="sc-jSMfEi eQOOWD"
+          class="sc-eCYdqJ eLaVsl"
         >
           userName
         </p>
       </div>
       <div
-        class="sc-gKXOVf kSkZUi"
+        class="sc-jSMfEi bKWWQD"
       >
         <svg
           fill="currentColor"
@@ -38,65 +38,77 @@ exports[`DriverCardSnapshot should render normal driver card 1`] = `
         </svg>
       </div>
     </div>
-    <img
-      class="sc-bczRLJ hLfesy"
-      src="profile_picture_url"
-    />
     <div
-      class="sc-papXJ cUbEkE"
+      class="sc-ftvSup cqdCPy"
     >
-      <p
-        class="sc-dkzDqf sc-iBkjds bkDjgV fFsFeO"
+      <img
+        class="sc-iqcoie iKzqkW"
+        src="profile_picture_url"
+      />
+      <div
+        class="sc-papXJ jhdeYe"
       >
-        Nama Driver
-      </p>
-      <p
-        class="sc-ftvSup gkzTvw"
-      >
-        firstName, lastName
-      </p>
-    </div>
-    <div
-      class="sc-papXJ cUbEkE"
-    >
-      <p
-        class="sc-dkzDqf sc-iBkjds bkDjgV fFsFeO"
-      >
-        Telepon
-      </p>
-      <p
-        class="sc-ftvSup gkzTvw"
-      >
-        098123123123
-      </p>
-    </div>
-    <div
-      class="sc-papXJ cUbEkE"
-    >
-      <p
-        class="sc-dkzDqf sc-iBkjds bkDjgV fFsFeO"
-      >
-        Email
-      </p>
-      <p
-        class="sc-ftvSup gkzTvw"
-      >
-        email@email.com
-      </p>
-    </div>
-    <div
-      class="sc-papXJ cUbEkE"
-    >
-      <p
-        class="sc-dkzDqf sc-iBkjds bkDjgV fFsFeO"
-      >
-        Tanggal Lahir
-      </p>
-      <p
-        class="sc-ftvSup gkzTvw"
-      >
-        12/10/1998
-      </p>
+        <div
+          class="sc-jqUVSM ifauud"
+        >
+          <p
+            class="sc-gsnTZi sc-gKXOVf FhkDi beJtKk"
+          >
+            Nama Driver
+          </p>
+          <p
+            class="sc-iBkjds kCUvor"
+          >
+            firstName, lastName
+          </p>
+        </div>
+        <div
+          class="sc-jqUVSM ifauud"
+        >
+          <p
+            class="sc-gsnTZi sc-gKXOVf FhkDi beJtKk"
+          >
+            Telepon
+          </p>
+          <p
+            class="sc-iBkjds kCUvor"
+          >
+            098123123123
+          </p>
+        </div>
+        <div
+          class="sc-kDDrLX bbZLZe"
+        >
+          <div
+            class="sc-jqUVSM ifauud"
+          >
+            <p
+              class="sc-gsnTZi sc-gKXOVf FhkDi beJtKk"
+            >
+              Email
+            </p>
+            <p
+              class="sc-iBkjds kCUvor"
+            >
+              email@email.com
+            </p>
+          </div>
+          <div
+            class="sc-jqUVSM ifauud"
+          >
+            <p
+              class="sc-gsnTZi sc-gKXOVf FhkDi beJtKk"
+            >
+              Tanggal Lahir
+            </p>
+            <p
+              class="sc-iBkjds kCUvor"
+            >
+              12/10/1998
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </DocumentFragment>
