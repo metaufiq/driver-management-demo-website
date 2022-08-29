@@ -1,9 +1,14 @@
 import {render} from '@testing-library/react';
 import { ThemeProvider } from 'styled-components';
-import { Component as ComponentType } from '../index.types';
+import { Component as ComponentType, SetState } from '../index.types';
 
 import { Config, Configs } from "./index.types"
 
+export const mockFunctionSetState = (prevState: any) => {
+  const setterListener = jest.fn();
+  const setterObject:SetState<any> = (fn) => { setterListener(fn(prevState)); }
+  return {setterListener, setterObject};
+}
 
 const _renderContainer = <Props,>(Component:ComponentType<Props>, {useTheme, props, theme}: Config<Props>)=>{
   if (!useTheme) {
