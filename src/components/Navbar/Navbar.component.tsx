@@ -12,7 +12,7 @@ import { Props } from "./Navbar.component.types";
  * @param {Props} props component props 
  * @returns {ReactElement} Navbar components
  */
-export const Navbar:Component<Props> = ({visible, onPressBurger}):ReactElement=>(
+const Navbar:Component<Props> = ({visible, onPressBurger}):ReactElement=>(
   <Container visible={visible}>
       <IconBurgerContainer
         visible={visible}
@@ -32,3 +32,5 @@ export const Navbar:Component<Props> = ({visible, onPressBurger}):ReactElement=>
       </UserContainer>
   </Container>
 )
+
+export default Navbar
