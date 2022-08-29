@@ -4,3 +4,5 @@ export type Props = {
   textAlign?: 'start' | 'end';
   buttonType?: Type;
 }
+
+export type ColorStyle = string | undefined

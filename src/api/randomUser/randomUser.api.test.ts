@@ -22,7 +22,13 @@ const mockedUserAPI: User ={
   },
 };
 
-const mockedAPIResult = (results?: number) => new Array(results).fill(mockedUserAPI);
+/**
+ * mocked getListUser API result
+ * @param {number} results total data
+ * @returns {User[]} API result
+ */
+const mockedAPIResult = (results?: number): User[] => 
+new Array(results).fill(mockedUserAPI);
 
 jest.mock('../../configs/api', ()=>({
   RandomUser:{

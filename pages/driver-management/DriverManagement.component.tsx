@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import { useState } from 'react';
+import { ReactElement, useState } from 'react';
 import { FaSearch } from 'react-icons/fa';
 import { HiOutlinePlus } from 'react-icons/hi';
 
@@ -17,21 +17,41 @@ import {
   HeaderTitle, 
   HeaderUtilsContainer
 } from './DriverManagement.component.styles';
-import { SetPageIndex, SetSearchInput } from './DriverManagement.component.types';
+import { SearchEventFunction, SetPageIndex, SetSearchInput } from './DriverManagement.component.types';
 
-export const _onInputSearch = (setSearchInput: SetSearchInput)=>(event: React.ChangeEvent<HTMLInputElement>)=>{
+/**
+ * trigered event when user changes search input
+ * @param {SetSearchInput} setSearchInput setter search input state
+ * @returns {SearchEventFunction} execute setSearchInput
+ */
+export const _onInputSearch = (setSearchInput: SetSearchInput): SearchEventFunction=>
+(event: React.ChangeEvent<HTMLInputElement>)=>{
   setSearchInput(event.target.value)
 }
 
+/**
+ * trigered event when user move to next page
+ * @param {SetPageIndex} setPageIndex setter page state
+ * @returns {VoidFunction} execute setPageIndex
+ */
 export const _onNextPage = (setPageIndex: SetPageIndex)=>()=>{
   setPageIndex(index=>index+1)
 }
 
-export const _onPrevPage = (setPageIndex: SetPageIndex)=>()=>{
+/**
+ * trigered event when user move to previous page
+ * @param {SetPageIndex} setPageIndex setter page state
+ * @returns {VoidFunction} execute setPageIndex
+ */
+export const _onPrevPage = (setPageIndex: SetPageIndex): VoidFunction=>()=>{
   setPageIndex(index=>index-1)
 }
 
-const DriverManagement: NextPage = () => {
+/**
+ * Driver Management page
+ * @returns {ReactElement} Driver Management page
+ */
+const DriverManagement: NextPage = (): ReactElement => {
   const {users:initialValue, isLoading, isError, refetch} = useUsersQuery();
   const [pageIndex, setPageIndex] = useState(1);
   const [searchInput, setSearchInput]= useState<string>();

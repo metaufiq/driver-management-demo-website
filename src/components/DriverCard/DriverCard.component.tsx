@@ -1,3 +1,4 @@
+import { ReactElement } from "react";
 import { HiDotsHorizontal } from "react-icons/hi";
 
 import { Component } from "../../../index.types";
@@ -15,7 +16,12 @@ import {
 
 import { Props } from "./DriverCard.component.types";
 
-const DriverCard:Component<Props> = ({user})=>{
+/**
+ * Driver Card components
+ * @param {Props} props component props 
+ * @returns {ReactElement} Driver Card components
+ */
+const DriverCard:Component<Props> = ({user}):ReactElement=>{
   return(
   <Container>
     <Header>

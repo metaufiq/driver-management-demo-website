@@ -1,7 +1,14 @@
 import styled, { DefaultTheme, ThemedStyledProps } from "styled-components";
-import { Props } from "./Button.component.types";
+import { ColorStyle, Props } from "./Button.component.types";
 
-const _getBackgroundColor = ({buttonType, theme}:ThemedStyledProps<Props, DefaultTheme>)=>{
+/**
+ * get background color based on button type props
+ * @param {ThemedStyledProps<Props, DefaultTheme>} themeProps theme Props
+ * @returns {ColorStyle} background color ;
+ */
+const _getBackgroundColor = (
+  {buttonType, theme}:ThemedStyledProps<Props, DefaultTheme>
+): ColorStyle=>{
   switch (buttonType) {
     case "PRIMARY":
       return theme.colors.primary
@@ -12,7 +19,14 @@ const _getBackgroundColor = ({buttonType, theme}:ThemedStyledProps<Props, Defaul
   }
 }
 
-const _getColor = ({buttonType}:ThemedStyledProps<Props, DefaultTheme>)=>{
+/**
+ * get text color based on button type props
+ * @param {ThemedStyledProps<Props, DefaultTheme>} themeProps theme Props
+ * @returns {ColorStyle} text color ;
+ */
+const _getColor = (
+  {buttonType}:ThemedStyledProps<Props, DefaultTheme>
+):ColorStyle=>{
   switch (buttonType) {
     case "PRIMARY":
       return 'white'
