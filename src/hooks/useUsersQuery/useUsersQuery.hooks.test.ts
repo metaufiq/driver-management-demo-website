@@ -1,7 +1,7 @@
 import React from "react";
 
 import api from "../../api";
-import { User, UserFromAPI } from "../../../index.types";
+import { User, UserFromAPI } from "@dmd/types";
 import { _onFetch, _convertUserToUserState, _getListUser } from "./useUsersQuery.hooks";
 import useUsersQuery from '.'
 

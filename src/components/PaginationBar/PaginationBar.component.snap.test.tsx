@@ -1,6 +1,6 @@
-import { assertSnapshots } from "../../test";
+import { assertSnapshots } from "@dmd/test";
 import PaginationBar from ".";
-import { Configs } from "../../test/index.types";
+import { Configs } from "@dmd/test/index.types";
 import { Props } from "./PaginationBar.component.types";
 
 describe('PaginationBarSnapshot', () => {

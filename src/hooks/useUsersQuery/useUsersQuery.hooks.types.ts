@@ -1,4 +1,4 @@
-import { SetState, Users } from "../../../index.types";
+import { SetState, Users } from "@dmd/types";
 
 export type SetLoading = SetState<boolean>
 

@@ -1,7 +1,7 @@
 import { ReactElement } from "react";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
-import { Component } from "../../../index.types";
+import { Component } from "@dmd/types";
 import Button from "../Button";
 import { PaginationContainer } from "./PaginationBar.component.styles";
 import { Props } from "./PaginationBar.component.types";

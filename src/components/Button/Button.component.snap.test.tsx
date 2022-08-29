@@ -1,6 +1,6 @@
-import { assertSnapshots } from "../../test";
+import { assertSnapshots } from "@dmd/test";
 import Button from ".";
-import { Configs } from "../../test/index.types";
+import { Configs } from "@dmd/test/index.types";
 import { Props } from "./Button.component.types";
 import { themes } from "../../configs/themes";
 

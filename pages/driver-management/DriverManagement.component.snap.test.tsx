@@ -1,5 +1,5 @@
-import { assertSnapshots } from "../../src/test";
-import { Configs } from "../../src/test/index.types";
+import { assertSnapshots } from "@dmd/test";
+import { Configs } from "@dmd/test/index.types";
 import { themes } from "../../src/configs/themes";
 import DriverManagement from "./index.page";
 

@@ -1,6 +1,6 @@
 import { ReactElement } from "react";
 
-import { Component } from "../../../index.types";
+import { Component } from "@dmd/types";
 import { Container, LeftIconContainer, StyledInput } from "./TextInput.component.styles";
 import { Props } from "./TextInput.component.types";
 

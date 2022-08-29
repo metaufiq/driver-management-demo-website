@@ -1,6 +1,6 @@
 import { themes } from "../../configs/themes";
-import { assertSnapshots } from "../../test";
-import { Configs } from "../../test/index.types";
+import { assertSnapshots } from "@dmd/test";
+import { Configs } from "@dmd/test/index.types";
 import TextInput from ".";
 import { Props } from "./TextInput.component.types";
 
