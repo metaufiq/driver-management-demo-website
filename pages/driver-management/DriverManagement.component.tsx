@@ -4,10 +4,13 @@ import { useState } from 'react';
 import { FaSearch } from 'react-icons/fa';
 import { HiOutlinePlus } from 'react-icons/hi';
 
-import TextInput from '../../components/TextInput';
 import { PAGE } from '../../constants';
 import useUsers from '../../hooks/useUsers';
 import useUsersQuery from '../../hooks/useUsersQuery';
+import TextInput from '../../components/TextInput';
+import ListDriver from '../../components/ListDriver';
+import PaginationBar from '../../components/PaginationBar';
+import Button from '../../components/Button';
 import { 
   HeaderContainer,
   HeaderDescription, 
@@ -15,23 +18,20 @@ import {
   HeaderUtilsContainer
 } from './DriverManagement.component.styles';
 import { SetPageIndex, SetSearchInput } from './DriverManagement.component.types';
-import ListDriver from '../../components/ListDriver/ListDriver.component';
-import PaginationBar from '../../components/PaginationBar';
-import Button from '../../components/Button';
 
-const _onInputSearch = (setSearchInput: SetSearchInput)=>(event: React.ChangeEvent<HTMLInputElement>)=>{
+export const _onInputSearch = (setSearchInput: SetSearchInput)=>(event: React.ChangeEvent<HTMLInputElement>)=>{
   setSearchInput(event.target.value)
 }
 
-const _onNextPage = (setPageIndex: SetPageIndex)=>()=>{
+export const _onNextPage = (setPageIndex: SetPageIndex)=>()=>{
   setPageIndex(index=>index+1)
 }
 
-const _onPrevPage = (setPageIndex: SetPageIndex)=>()=>{
+export const _onPrevPage = (setPageIndex: SetPageIndex)=>()=>{
   setPageIndex(index=>index-1)
 }
 
-const DriverManagement: NextPage = (props) => {
+const DriverManagement: NextPage = () => {
   const {users:initialValue, isLoading, isError, refetch} = useUsersQuery();
   const [pageIndex, setPageIndex] = useState(1);
   const [searchInput, setSearchInput]= useState<string>();

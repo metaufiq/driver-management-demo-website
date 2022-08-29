@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DriverCardSnapshot should render normal driver management page 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bczRLJ gTcjwW"
+  >
+    <div>
+      <h1
+        class="sc-gsnTZi ilOcVr"
+      >
+        DRIVER MANAGEMENT
+      </h1>
+      <p
+        class="sc-dkzDqf bVYhbL"
+      >
+        Data Driver bekerja dengan Anda.
+      </p>
+    </div>
+    <div
+      class="sc-hKMtZM kJJpbA"
+    >
+      <textinput
+        lefticon="[object Object]"
+        placeholder="Cari Driver"
+        type="text"
+      />
+      <button
+        buttontype="PRIMARY"
+        textalign="start"
+      >
+        TAMBAH DRIVER
+        <svg
+          fill="none"
+          height="1em"
+          stroke="currentColor"
+          stroke-width="0"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12 4v16m8-8H4"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+          />
+        </svg>
+      </button>
+    </div>
+  </div>
+  <br />
+  <listdriver
+    data="[object Object]"
+  />
+  <paginationbar
+    pageindex="1"
+    totalpages="6"
+  />
+</DocumentFragment>
+`;
