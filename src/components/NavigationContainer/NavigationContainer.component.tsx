@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { ReactElement, useState } from 'react'
 import {FaBars} from 'react-icons/fa'
 import { useRouter } from 'next/router'
 
@@ -20,10 +20,21 @@ import { Props, SetVisible } from './NavigationContainer.component.types'
 import Avatar from '../Avatar'
 import { NAVIGATION_MENU, USER_AVATAR_URL } from '../../constants'
 
-export const _showSidebar = (setVisible:SetVisible, visible: boolean)=>
+/**
+ * function to set sidebar visibility
+ * @param {SetVisible} setVisible set sidebar visible or not
+ * @param visible visible condition for sidebar
+ * @returns {VoidFunction} execute setVisible
+ */
+export const _showSidebar = (setVisible:SetVisible, visible: boolean): VoidFunction=>
 () => setVisible(visible)
 
-const NavigationContainer: Component<Props> = (props) => {
+/**
+ * Navigation Container components
+ * @param {Props} props component props 
+ * @returns {ReactElement} Text Input components
+ */
+const NavigationContainer: Component<Props> = (props: Props):ReactElement => {
     const router = useRouter()
     const isRootRoute = router.route === '/';
     
