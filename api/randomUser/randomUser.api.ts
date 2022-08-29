@@ -1,7 +1,7 @@
 import APIServices from "../../configs/api";
 import { GetListUserResponses, Params } from "./randomUser.api.types";
 
-const getListUser = async (params: Params): Promise<GetListUserResponses> => {
+export const getListUser = async (params: Params): Promise<GetListUserResponses> => {
   const { data } = await APIServices.RandomUser.get('/', {params});
 
   return data;
