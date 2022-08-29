@@ -26,7 +26,12 @@ const ListDriver:Component<Props> = (
     return(
       <ErrorContainer>
         <p>Terjadi Kesalahan Saat pengambilan Data Driver.</p>
-        <Button onClick={refetch}>Coba Lagi</Button>
+        <Button 
+          onClick={refetch} 
+          buttonType="PRIMARY"
+        >
+          Coba Lagi
+        </Button>
       </ErrorContainer>
     )
   }
