@@ -16,19 +16,19 @@ export const _convertUserToUserState = (user: UserFromAPI):User => ({
   profilePicture: user.picture.medium
 })
 
-const _getListUser = async (params: APIParams):Promise<Users> => {
+export const _getListUser = async (params: APIParams):Promise<Users> => {
   const stringifyUsers = localStorage.getItem('users')
   if (stringifyUsers) {
     return JSON.parse(stringifyUsers)
   }
 
   const {results} = await api.randomUser.getListUser(params)
-
   const users = results.map(_convertUserToUserState)
+
   return users;
 }
 
-const _asyncInnit = async (
+export const _asyncInnit = async (
   setUsers: SetUsers, 
   setLoading: SetLoading, 
   setError: SetError
