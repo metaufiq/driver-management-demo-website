@@ -1,7 +1,15 @@
+import { ReactElement } from "react";
+
+import { Component } from "../../../index.types";
 import { Container, LeftIconContainer, StyledInput } from "./TextInput.component.styles";
 import { Props } from "./TextInput.component.types";
 
-const TextInput = (props: Props)=>{
+/**
+ * Text Input components
+ * @param {Props} props component props 
+ * @returns {ReactElement} Text Input components
+ */
+const TextInput:Component<Props> = (props: Props): ReactElement=>{
   return(
     <Container>
       {props.leftIcon && <LeftIconContainer>
@@ -9,7 +17,6 @@ const TextInput = (props: Props)=>{
       </LeftIconContainer>}
       
       <StyledInput
-        id={props.id}
         type={props.type}
         placeholder={props.placeholder}
         onChange={props.onChange}
