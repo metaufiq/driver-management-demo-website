@@ -1,24 +1,18 @@
 import { ReactElement, useState } from 'react'
-import {FaBars} from 'react-icons/fa'
 import { useRouter } from 'next/router'
 
 import { Component } from '../../../index.types'
 import { 
   ChildContainer,
-  ContentContainer, 
-  InlineText, 
+  ContentContainer,
   MenuIconClose, 
-  MenuIconOpen, 
   MenuItemLinks, 
   MenuItems, 
-  MenuList, 
-  Navbar,
-  UserContainer, 
-  UserName 
+  MenuList,
 } from './NavigationContainer.component.styles'
 import { Props, SetVisible } from './NavigationContainer.component.types'
-import Avatar from '../Avatar'
 import { NAVIGATION_MENU, USER_AVATAR_URL } from '../../constants'
+import Navbar from '../Navbar'
 
 /**
  * function to set sidebar visibility
@@ -42,24 +36,11 @@ const NavigationContainer: Component<Props> = (props: Props):ReactElement => {
     
     return (
         <>
-            <Navbar visible={visible}>
-                <MenuIconOpen
-                  visible={visible}
-                  href="#" 
-                  onClick={_showSidebar(setVisible, true)}
-                >
-                  <FaBars />
-                </MenuIconOpen>
-                <UserContainer>
-                  <InlineText>Hello,</InlineText>
-                  <UserName>Shipper User</UserName>
-                  <Avatar 
-                    src={USER_AVATAR_URL}
-                    height={'30%'}
-                    width={'30%'}
-                  />
-                </UserContainer>
-            </Navbar>
+            <Navbar
+              visible={visible}
+              userImage={USER_AVATAR_URL}
+              onPressBurger={_showSidebar(setVisible, true)}
+            />
 
             <ContentContainer>
               <MenuList visible={visible}>

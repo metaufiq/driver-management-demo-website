@@ -3,10 +3,10 @@
 exports[`NavigationContainerSnapshot should render navigation container 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bczRLJ jYMOus"
+    class="sc-iBkjds hZEXaG"
   >
     <a
-      class="sc-hKMtZM hVaphc"
+      class="sc-jqUVSM dXkhYD"
       href="#"
     >
       <svg
@@ -24,20 +24,20 @@ exports[`NavigationContainerSnapshot should render navigation container 1`] = `
       </svg>
     </a>
     <div
-      class="sc-eCYdqJ dnXcIZ"
+      class="sc-kDDrLX cMPlXY"
     >
       <p
-        class="sc-gsnTZi sZLaa"
+        class="sc-ftvSup gIMMJJ"
       >
         Hello,
       </p>
       <p
-        class="sc-gsnTZi sc-dkzDqf sZLaa hotxYn"
+        class="sc-ftvSup sc-papXJ gIMMJJ yDXAy"
       >
         Shipper User
       </p>
       <img
-        class="sc-kDDrLX dVtptw"
+        class="sc-gKXOVf XlZHa"
         height="30%"
         src="https://randomuser.me/api/portraits/med/men/18.jpg"
         width="30%"
@@ -45,22 +45,22 @@ exports[`NavigationContainerSnapshot should render navigation container 1`] = `
     </div>
   </div>
   <div
-    class="sc-papXJ iimcul"
+    class="sc-eCYdqJ dakOWi"
   >
     <div
-      class="sc-gKXOVf fhlsoz"
+      class="sc-gsnTZi kfIvhl"
     >
       <a
-        class="sc-jSMfEi kGXgxn"
+        class="sc-bczRLJ itxdoa"
         href="#"
       >
         Close
       </a>
       <li
-        class="sc-iBkjds iBfLKo"
+        class="sc-dkzDqf gwIkhj"
       >
         <a
-          class="sc-ftvSup cPJlzr"
+          class="sc-hKMtZM iOhZzg"
           href="#"
         >
           <svg
@@ -86,10 +86,10 @@ exports[`NavigationContainerSnapshot should render navigation container 1`] = `
         </a>
       </li>
       <li
-        class="sc-iBkjds iBfLKo"
+        class="sc-dkzDqf gwIkhj"
       >
         <a
-          class="sc-ftvSup cPJlzr"
+          class="sc-hKMtZM iOhZzg"
           href="/driver-management"
         >
           <svg
@@ -113,10 +113,10 @@ exports[`NavigationContainerSnapshot should render navigation container 1`] = `
         </a>
       </li>
       <li
-        class="sc-iBkjds iBfLKo"
+        class="sc-dkzDqf gwIkhj"
       >
         <a
-          class="sc-ftvSup cPJlzr"
+          class="sc-hKMtZM iOhZzg"
           href="#"
         >
           <svg
@@ -147,7 +147,7 @@ exports[`NavigationContainerSnapshot should render navigation container 1`] = `
       </li>
     </div>
     <div
-      class="sc-jqUVSM jeDIMB"
+      class="sc-jSMfEi gvmDNp"
     />
   </div>
 </DocumentFragment>
@@ -156,10 +156,10 @@ exports[`NavigationContainerSnapshot should render navigation container 1`] = `
 exports[`NavigationContainerSnapshot should render navigation container with close icon 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bczRLJ jYMOus"
+    class="sc-iBkjds hZEXaG"
   >
     <a
-      class="sc-hKMtZM hVaphc"
+      class="sc-jqUVSM dXkhYD"
       href="#"
     >
       <svg
@@ -177,20 +177,20 @@ exports[`NavigationContainerSnapshot should render navigation container with clo
       </svg>
     </a>
     <div
-      class="sc-eCYdqJ dnXcIZ"
+      class="sc-kDDrLX cMPlXY"
     >
       <p
-        class="sc-gsnTZi sZLaa"
+        class="sc-ftvSup gIMMJJ"
       >
         Hello,
       </p>
       <p
-        class="sc-gsnTZi sc-dkzDqf sZLaa hotxYn"
+        class="sc-ftvSup sc-papXJ gIMMJJ yDXAy"
       >
         Shipper User
       </p>
       <img
-        class="sc-kDDrLX dVtptw"
+        class="sc-gKXOVf XlZHa"
         height="30%"
         src="https://randomuser.me/api/portraits/med/men/18.jpg"
         width="30%"
@@ -198,22 +198,22 @@ exports[`NavigationContainerSnapshot should render navigation container with clo
     </div>
   </div>
   <div
-    class="sc-papXJ iimcul"
+    class="sc-eCYdqJ dakOWi"
   >
     <div
-      class="sc-gKXOVf fhlsoz"
+      class="sc-gsnTZi kfIvhl"
     >
       <a
-        class="sc-jSMfEi kGXgxn"
+        class="sc-bczRLJ itxdoa"
         href="#"
       >
         Close
       </a>
       <li
-        class="sc-iBkjds iBfLKo"
+        class="sc-dkzDqf gwIkhj"
       >
         <a
-          class="sc-ftvSup cPJlzr"
+          class="sc-hKMtZM iOhZzg"
           href="#"
         >
           <svg
@@ -239,10 +239,10 @@ exports[`NavigationContainerSnapshot should render navigation container with clo
         </a>
       </li>
       <li
-        class="sc-iBkjds iBfLKo"
+        class="sc-dkzDqf gwIkhj"
       >
         <a
-          class="sc-ftvSup cPJlzr"
+          class="sc-hKMtZM iOhZzg"
           href="/driver-management"
         >
           <svg
@@ -266,10 +266,10 @@ exports[`NavigationContainerSnapshot should render navigation container with clo
         </a>
       </li>
       <li
-        class="sc-iBkjds iBfLKo"
+        class="sc-dkzDqf gwIkhj"
       >
         <a
-          class="sc-ftvSup cPJlzr"
+          class="sc-hKMtZM iOhZzg"
           href="#"
         >
           <svg
@@ -300,7 +300,7 @@ exports[`NavigationContainerSnapshot should render navigation container with clo
       </li>
     </div>
     <div
-      class="sc-jqUVSM jeDIMB"
+      class="sc-jSMfEi gvmDNp"
     />
   </div>
 </DocumentFragment>
