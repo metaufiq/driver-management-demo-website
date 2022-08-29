@@ -1,5 +1,7 @@
 import { NextComponentType, NextPageContext } from "next";
 
+import { User as UserFromAPI } from "./src/api/randomUser/randomUser.api.types";
+
 export type User = {
   username: string,
   firstName: string,
@@ -7,7 +9,7 @@ export type User = {
   email: string,
   dob: string,
   phone: string,
-  profilePicture: string
+  picture: UserFromAPI['picture']
 }
 
 export type Users = User[]

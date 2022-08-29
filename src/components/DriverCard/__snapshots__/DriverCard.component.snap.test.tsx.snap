@@ -41,9 +41,8 @@ exports[`DriverCardSnapshot should render normal driver card 1`] = `
     <div
       class="sc-ftvSup cqdCPy"
     >
-      <img
-        class="sc-iqcoie iKzqkW"
-        src="profile_picture_url"
+      <div
+        class="sc-iqcoie PwvmX"
       />
       <div
         class="sc-papXJ jhdeYe"

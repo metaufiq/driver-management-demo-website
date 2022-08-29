@@ -47,7 +47,7 @@ describe('#_convertUserToUserState', () => {
       firstName: mockedUserAPI.name.first,
       lastName: mockedUserAPI.name.last,
       phone: mockedUserAPI.phone,
-      profilePicture: mockedUserAPI.picture.medium,
+      picture: mockedUserAPI.picture,
     }
 
     const result = _convertUserToUserState(mockedUserAPI)
@@ -65,7 +65,7 @@ describe('#_getListUser', () => {
       firstName: mockedUserAPI.name.first,
       lastName: mockedUserAPI.name.last,
       phone: mockedUserAPI.phone,
-      profilePicture: mockedUserAPI.picture.medium,
+      picture: mockedUserAPI.picture,
     }
     const expected = new Array(mockedAPIResult.length).fill(user)
     // @ts-ignore: mock implementation
@@ -90,7 +90,7 @@ describe('#_onFetch', () => {
       firstName: mockedUserAPI.name.first,
       lastName: mockedUserAPI.name.last,
       phone: mockedUserAPI.phone,
-      profilePicture: mockedUserAPI.picture.medium,
+      picture: mockedUserAPI.picture,
     }
     const expectedSetUsers = new Array(mockedAPIResult.length).fill(user)
     // @ts-ignore: mock implementation

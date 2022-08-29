@@ -38,7 +38,7 @@ const DriverCard:Component<Props> = ({user}):ReactElement=>{
     </Header>
     <ContentContainer>
       <Avatar
-        src={user.profilePicture}
+        picture={user.picture}
       />
       <DescriptionContainer>
         <DescriptionContentContainer>

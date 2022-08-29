@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { AvatarProps } from "./DriverCard.component.types";
 
 export const Container = styled.div`
   background-color: white;
@@ -82,12 +83,23 @@ export const HideMobileContainer = styled.div`
   }
 `
 
-export const Avatar = styled.img`
+export const Avatar = styled.div<AvatarProps>`
   border-radius: 50%;
-  padding: 1rem;
+  width: 30%;
+  padding-top: 30%;
+  margin: 1rem;
+  background-image: ${({picture})=>`url(${picture?.medium})`};
+  background-size:     cover;
+  background-repeat:   no-repeat;
+  background-position: center center;
   @media (max-width: 768px) {
-    flex-grow: 0.5;
-    padding: 2rem;
+    margin: 2rem;
+    width: 30%;
+    padding-top: 30%;
+
+    @media (min-width: 500px){
+      background-image: ${({picture})=>`url(${picture?.large})`};
+    }
   }
 `
 

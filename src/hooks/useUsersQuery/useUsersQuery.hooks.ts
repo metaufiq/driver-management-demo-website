@@ -19,7 +19,7 @@ export const _convertUserToUserState = (user: UserFromAPI):User => ({
   lastName: user.name.last,
   username: user.login.username.toUpperCase(),
   phone: user.phone,
-  profilePicture: user.picture.medium
+  picture: user.picture
 })
 
 /**

@@ -73,9 +73,8 @@ exports[`ListDriverSnapshot should render normal state list driver 1`] = `
       <div
         class="sc-papXJ hIXhCT"
       >
-        <img
-          class="sc-crXcEl jjACuZ"
-          src="profile_picture_url"
+        <div
+          class="sc-crXcEl DiqhE"
         />
         <div
           class="sc-jqUVSM epcwnv"

@@ -110,8 +110,8 @@ exports[`DriverCardSnapshot should render normal driver management page 1`] = `
       <div
         class="sc-iqcoie dOItqw"
       >
-        <img
-          class="sc-ksZaOG dfRWDh"
+        <div
+          class="sc-ksZaOG MBduI"
         />
         <div
           class="sc-crXcEl eEnHtW"
