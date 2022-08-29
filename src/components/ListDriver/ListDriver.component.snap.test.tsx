@@ -14,7 +14,11 @@ describe('ListDriverSnapshot', () => {
     lastName: 'lastName',
     phone: '098123123123',
     username: 'userName',
-    profilePicture: 'profile_picture_url'
+    picture: {
+      large: 'large_picture_url',
+      medium: 'medium_picture_url',
+      thumbnail: 'thumbnail_picture_url',
+    }
    }]
 
   const configs: Configs<Props> = [

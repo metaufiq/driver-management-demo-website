@@ -1,8 +1,8 @@
-import APIServices from "../../configs/api";
+import { UserFromAPI } from "../../../index.types";
 import { getListUser } from "./randomUser.api";
-import { Params, User } from "./randomUser.api.types";
+import { Params } from "./randomUser.api.types";
 
-const mockedUserAPI: User ={
+const mockedUserAPI: UserFromAPI ={
   email: 'email@email.com',
   name:{
     first: 'firstName',
@@ -27,7 +27,7 @@ const mockedUserAPI: User ={
  * @param {number} results total data
  * @returns {User[]} API result
  */
-const mockedAPIResult = (results?: number): User[] => 
+const mockedAPIResult = (results?: number): UserFromAPI[] => 
 new Array(results).fill(mockedUserAPI);
 
 jest.mock('../../configs/api', ()=>({

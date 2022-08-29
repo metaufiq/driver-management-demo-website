@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 
-import { User as UserFromAPI, Params as APIParams } from "../../api/randomUser/randomUser.api.types";
+import {Params as APIParams } from "../../api/randomUser/randomUser.api.types";
 import api from "../../api";
-import { SetUsers, User, Users } from "../../../index.types";
+import { SetUsers, User, UserFromAPI, Users } from "../../../index.types";
 import { formatISODateToDate } from "../../utils";
 import { HooksData, SetError, SetLoading } from "./useUsersQuery.hooks.types";
 import { TOTAL_USER } from "../../constants";

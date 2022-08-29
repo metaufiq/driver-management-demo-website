@@ -1,6 +1,24 @@
 import { NextComponentType, NextPageContext } from "next";
 
-import { User as UserFromAPI } from "./src/api/randomUser/randomUser.api.types";
+export type UserFromAPI = {
+  name: {
+    first: string,
+    last: string
+  },
+  email: string,
+  login: {
+    username: string,
+  },
+  dob: {
+    date: string
+  },
+  phone: string,
+  picture: {
+    large: string,
+    medium: string,
+    thumbnail: string
+  }
+}
 
 export type User = {
   username: string,
