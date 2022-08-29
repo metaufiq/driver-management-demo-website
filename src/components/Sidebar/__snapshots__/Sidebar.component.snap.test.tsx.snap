@@ -1,0 +1,209 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavbarSnapshot should render normal Navbar with visible value is equal to false 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bczRLJ cooIUN"
+  >
+    <a
+      class="sc-gsnTZi pWPJU"
+      href="#"
+    >
+      Close
+    </a>
+    <li
+      class="sc-dkzDqf gwIkhj"
+    >
+      <a
+        class="sc-hKMtZM iOhZzg"
+        href="#"
+      >
+        <svg
+          baseProfile="tiny"
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          stroke-width="0"
+          version="1.2"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12 3s-6.186 5.34-9.643 8.232c-.203.184-.357.452-.357.768 0 .553.447 1 1 1h2v7c0 .553.447 1 1 1h3c.553 0 1-.448 1-1v-4h4v4c0 .552.447 1 1 1h3c.553 0 1-.447 1-1v-7h2c.553 0 1-.447 1-1 0-.316-.154-.584-.383-.768-3.433-2.892-9.617-8.232-9.617-8.232z"
+          />
+        </svg>
+        <span
+          style="margin-left: 16px;"
+        >
+          Beranda
+        </span>
+      </a>
+    </li>
+    <li
+      class="sc-dkzDqf gwIkhj"
+    >
+      <a
+        class="sc-hKMtZM iOhZzg"
+        href="/driver-management"
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          stroke-width="0"
+          viewBox="0 0 496 512"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"
+          />
+        </svg>
+        <span
+          style="margin-left: 16px;"
+        >
+          Driver Management
+        </span>
+      </a>
+    </li>
+    <li
+      class="sc-dkzDqf gwIkhj"
+    >
+      <a
+        class="sc-hKMtZM iOhZzg"
+        href="#"
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          stroke-width="0"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g>
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M17 3h4a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h4V1h2v2h6V1h2v2zM4 9v10h16V9H4zm2 2h2v2H6v-2zm5 0h2v2h-2v-2zm5 0h2v2h-2v-2z"
+            />
+          </g>
+        </svg>
+        <span
+          style="margin-left: 16px;"
+        >
+          Pickup
+        </span>
+      </a>
+    </li>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`NavbarSnapshot should render normal Navbar with visible value is equal to true 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bczRLJ iosEpP"
+  >
+    <a
+      class="sc-gsnTZi pWPJU"
+      href="#"
+    >
+      Close
+    </a>
+    <li
+      class="sc-dkzDqf gwIkhj"
+    >
+      <a
+        class="sc-hKMtZM iOhZzg"
+        href="#"
+      >
+        <svg
+          baseProfile="tiny"
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          stroke-width="0"
+          version="1.2"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12 3s-6.186 5.34-9.643 8.232c-.203.184-.357.452-.357.768 0 .553.447 1 1 1h2v7c0 .553.447 1 1 1h3c.553 0 1-.448 1-1v-4h4v4c0 .552.447 1 1 1h3c.553 0 1-.447 1-1v-7h2c.553 0 1-.447 1-1 0-.316-.154-.584-.383-.768-3.433-2.892-9.617-8.232-9.617-8.232z"
+          />
+        </svg>
+        <span
+          style="margin-left: 16px;"
+        >
+          Beranda
+        </span>
+      </a>
+    </li>
+    <li
+      class="sc-dkzDqf gwIkhj"
+    >
+      <a
+        class="sc-hKMtZM iOhZzg"
+        href="/driver-management"
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          stroke-width="0"
+          viewBox="0 0 496 512"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"
+          />
+        </svg>
+        <span
+          style="margin-left: 16px;"
+        >
+          Driver Management
+        </span>
+      </a>
+    </li>
+    <li
+      class="sc-dkzDqf gwIkhj"
+    >
+      <a
+        class="sc-hKMtZM iOhZzg"
+        href="#"
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          stroke-width="0"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g>
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M17 3h4a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h4V1h2v2h6V1h2v2zM4 9v10h16V9H4zm2 2h2v2H6v-2zm5 0h2v2h-2v-2zm5 0h2v2h-2v-2z"
+            />
+          </g>
+        </svg>
+        <span
+          style="margin-left: 16px;"
+        >
+          Pickup
+        </span>
+      </a>
+    </li>
+  </div>
+</DocumentFragment>
+`;
