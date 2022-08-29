@@ -3,7 +3,7 @@ import type { AppProps } from 'next/app'
 import { ThemeProvider } from 'styled-components'
 import { ReactElement } from 'react'
 
-import '../../styles/globals.css'
+import '../styles/globals.css'
 import { themes } from '../src/configs/themes'
 import NavigationContainer from '../src/components/NavigationContainer'
 
