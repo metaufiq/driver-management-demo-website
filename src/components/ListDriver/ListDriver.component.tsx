@@ -1,3 +1,4 @@
+import { ReactElement } from "react"
 import { Component } from "../../../index.types"
 import Button from "../Button"
 import DriverCard from "../DriverCard"
@@ -5,7 +6,14 @@ import Spinner from "../Spinner"
 import { DataContainer, ErrorContainer, SpinnerContainer } from "./ListDriver.component.styles"
 import { Props } from "./ListDriver.component.types"
 
-const ListDriver:Component<Props> = ({isLoading, isError, data, refetch})=>{
+/**
+ * List Driver components
+ * @param {Props} props component props 
+ * @returns {ReactElement} List Driver components
+ */
+const ListDriver:Component<Props> = (
+  {isLoading, isError, data, refetch}: Props
+): ReactElement=>{
   if (isLoading) {
    return(
     <SpinnerContainer>
