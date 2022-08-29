@@ -312,6 +312,13 @@
   resolved "https://nxrm.jenius.tech/repository/npm-group/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
+"@dmd/types@github:metaufiq/dmd-types":
+  version "0.1.0"
+  resolved "git+ssh://git@github.com/metaufiq/dmd-types.git#9d5cda9f2de9c11f75dfa7fff6d823a8c8572f7d"
+  dependencies:
+    next "12.2.5"
+    react "18.2.0"
+
 "@emotion/is-prop-valid@^1.1.0":
   version "1.2.0"
   resolved "https://nxrm.jenius.tech/repository/npm-group/@emotion/is-prop-valid/-/is-prop-valid-1.2.0.tgz#7f2d35c97891669f7e276eb71c83376a5dc44c83"

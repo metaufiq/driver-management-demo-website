@@ -1,7 +1,6 @@
 import {render, RenderResult} from '@testing-library/react';
 import { ThemeProvider } from 'styled-components';
-import { Component as ComponentType, SetState } from '../../index.types';
-
+import {SetState, Component as ComponentType} from '@dmd/types'
 import { Config, Configs, MockedSetState, QueriesObject } from "./index.types"
 
 /**
