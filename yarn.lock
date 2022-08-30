@@ -312,17 +312,17 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@dmd/navigation-container@github:metaufiq/dmd-epic-navigation-container":
+"@dmd/navigation-container@git+https://github.com/metaufiq/dmd-epic-navigation-container":
   version "0.1.0"
-  resolved "git+ssh://git@github.com/metaufiq/dmd-epic-navigation-container.git#30b111f64267a1f7888dacf142dd55da9cac6c29"
+  resolved "git+https://github.com/metaufiq/dmd-epic-navigation-container#30b111f64267a1f7888dacf142dd55da9cac6c29"
 
-"@dmd/test@github:metaufiq/dmd-test":
+"@dmd/test@git+https://github.com/metaufiq/dmd-test":
   version "0.1.0"
-  resolved "git+ssh://git@github.com/metaufiq/dmd-test.git#9032a92bfee80070577de9c927b6ada540794b49"
+  resolved "git+https://github.com/metaufiq/dmd-test#9032a92bfee80070577de9c927b6ada540794b49"
 
-"@dmd/types@github:metaufiq/dmd-types":
+"@dmd/types@git+https://github.com/metaufiq/dmd-types":
   version "0.1.0"
-  resolved "git+ssh://git@github.com/metaufiq/dmd-types.git#e88b47d2feaf4de6a643efb1c80276a8ccc1187d"
+  resolved "git+https://github.com/metaufiq/dmd-types#e88b47d2feaf4de6a643efb1c80276a8ccc1187d"
 
 "@emotion/is-prop-valid@^1.1.0":
   version "1.2.0"

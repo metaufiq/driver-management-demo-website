@@ -11,7 +11,7 @@
     "test:coverage": "TZ='Asia/Jakarta' jest --expand --collectCoverage"
   },
   "dependencies": {
-    "@dmd/navigation-container": "github:metaufiq/dmd-epic-navigation-container",
+    "@dmd/navigation-container": "git+https://github.com/metaufiq/dmd-epic-navigation-container",
     "@next/bundle-analyzer": "^12.2.5",
     "axios": "^0.27.2",
     "babel-plugin-styled-components": "^2.0.7",
@@ -22,8 +22,8 @@
     "styled-components": "^5.3.5"
   },
   "devDependencies": {
-    "@dmd/test": "github:metaufiq/dmd-test",
-    "@dmd/types": "github:metaufiq/dmd-types",
+    "@dmd/test": "git+https://github.com/metaufiq/dmd-test",
+    "@dmd/types": "git+https://github.com/metaufiq/dmd-types",
     "@testing-library/jest-dom": "5.16.4",
     "@testing-library/react": "13.2.0",
     "@testing-library/user-event": "14.2.0",
