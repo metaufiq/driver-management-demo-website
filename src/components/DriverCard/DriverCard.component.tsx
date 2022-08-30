@@ -1,5 +1,5 @@
 import { ReactElement } from "react";
-import { HiDotsHorizontal } from "react-icons/hi";
+import { HiDotsHorizontal } from "@react-icons/all-files/hi/HiDotsHorizontal";
 
 import { Component } from "@dmd/types";
 import { 
