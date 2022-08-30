@@ -1,6 +1,6 @@
-import {TiHome} from 'react-icons/ti'
-import {RiCalendar2Fill} from 'react-icons/ri'
-import {FaUserCircle} from 'react-icons/fa'
+import {TiHome} from '@react-icons/all-files/ti/TiHome'
+import {RiCalendar2Fill} from '@react-icons/all-files/ri/RiCalendar2Fill'
+import {FaUserCircle} from '@react-icons/all-files/fa/FaUserCircle'
 
 export const TOTAL_USER = 30;
 export const USER_PER_PAGE = 5;
