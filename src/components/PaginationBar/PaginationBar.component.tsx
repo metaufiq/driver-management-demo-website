@@ -1,5 +1,6 @@
 import { ReactElement } from "react";
-import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
+import { FiChevronLeft } from "@react-icons/all-files/fi/FiChevronLeft";
+import { FiChevronRight } from "@react-icons/all-files/fi/FiChevronRight";
 
 import { Component } from "@dmd/types";
 import Button from "../Button";

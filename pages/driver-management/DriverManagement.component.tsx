@@ -1,8 +1,8 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import { ReactElement, useState } from 'react';
-import { FaSearch } from 'react-icons/fa';
-import { HiOutlinePlus } from 'react-icons/hi';
+import { FaSearch } from '@react-icons/all-files/fa/FaSearch';
+import { HiOutlinePlus } from '@react-icons/all-files/hi/HiOutlinePlus';
 
 import { PAGE } from '../../src/constants';
 import useUsers from '../../src/hooks/useUsers';
