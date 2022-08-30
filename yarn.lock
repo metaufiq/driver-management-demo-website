@@ -314,15 +314,15 @@
 
 "@dmd/navigation-container@git+https://github.com/metaufiq/dmd-epic-navigation-container":
   version "0.1.0"
-  resolved "https://codeload.github.com/metaufiq/dmd-epic-navigation-container/tar.gz/4102116b2a7d316e233ec7ac5e9f981d8488d7e8"
+  resolved "git+https://github.com/metaufiq/dmd-epic-navigation-container#4102116b2a7d316e233ec7ac5e9f981d8488d7e8"
 
 "@dmd/test@git+https://github.com/metaufiq/dmd-test":
   version "0.1.0"
-  resolved "https://codeload.github.com/metaufiq/dmd-test/tar.gz/9032a92bfee80070577de9c927b6ada540794b49"
+  resolved "git+https://github.com/metaufiq/dmd-test#9032a92bfee80070577de9c927b6ada540794b49"
 
 "@dmd/types@git+https://github.com/metaufiq/dmd-types":
   version "0.1.0"
-  resolved "https://codeload.github.com/metaufiq/dmd-types/tar.gz/e88b47d2feaf4de6a643efb1c80276a8ccc1187d"
+  resolved "git+https://github.com/metaufiq/dmd-types#e88b47d2feaf4de6a643efb1c80276a8ccc1187d"
 
 "@emotion/is-prop-valid@^1.1.0":
   version "1.2.0"
