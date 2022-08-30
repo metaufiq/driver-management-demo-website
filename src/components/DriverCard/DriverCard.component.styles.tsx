@@ -53,6 +53,8 @@ export const Title = styled(GrayText)`
 
 export const Description = styled.p`
   margin: 0;
+  word-wrap: break-word;
+  word-break: break-all;
   @media (max-width: 768px) {
     font-size: 1.2rem;
   }
