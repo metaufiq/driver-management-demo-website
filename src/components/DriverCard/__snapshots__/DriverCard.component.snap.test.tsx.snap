@@ -1,114 +1,119 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`DriverCardSnapshot should render normal driver card 1`] = `
-<DocumentFragment>
+<div
+  className="sc-bczRLJ bZLAfS"
+>
   <div
-    class="sc-bczRLJ bZLAfS"
+    className="sc-dkzDqf kwBbVE"
   >
-    <div
-      class="sc-dkzDqf kwBbVE"
-    >
-      <div>
-        <p
-          class="sc-gsnTZi sc-hKMtZM FhkDi eciUyH"
-        >
-          Driver ID
-        </p>
-        <p
-          class="sc-eCYdqJ eLaVsl"
-        >
-          userName
-        </p>
-      </div>
-      <div
-        class="sc-jSMfEi bKWWQD"
+    <div>
+      <p
+        className="sc-gsnTZi sc-hKMtZM FhkDi eciUyH"
       >
-        <svg
-          fill="currentColor"
-          height="1em"
-          stroke="currentColor"
-          stroke-width="0"
-          viewBox="0 0 20 20"
-          width="1em"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z"
-          />
-        </svg>
-      </div>
+        Driver ID
+      </p>
+      <p
+        className="sc-eCYdqJ eLaVsl"
+      >
+        userName
+      </p>
     </div>
     <div
-      class="sc-ftvSup cqdCPy"
+      className="sc-jSMfEi bKWWQD"
+    >
+      <svg
+        fill="currentColor"
+        height="1em"
+        stroke="currentColor"
+        strokeWidth="0"
+        style={
+          Object {
+            "color": undefined,
+          }
+        }
+        viewBox="0 0 20 20"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z"
+        />
+      </svg>
+    </div>
+  </div>
+  <div
+    className="sc-ftvSup cqdCPy"
+  >
+    <div
+      className="sc-iqcoie dHgEIj"
+    />
+    <div
+      className="sc-papXJ jhdeYe"
     >
       <div
-        class="sc-iqcoie PwvmX"
-      />
+        className="sc-jqUVSM ifauud"
+      >
+        <p
+          className="sc-gsnTZi sc-gKXOVf FhkDi beJtKk"
+        >
+          Nama Driver
+        </p>
+        <p
+          className="sc-iBkjds bthwDz"
+        >
+          firstName
+          , 
+          lastName
+        </p>
+      </div>
       <div
-        class="sc-papXJ jhdeYe"
+        className="sc-jqUVSM ifauud"
+      >
+        <p
+          className="sc-gsnTZi sc-gKXOVf FhkDi beJtKk"
+        >
+          Telepon
+        </p>
+        <p
+          className="sc-iBkjds bthwDz"
+        >
+          098123123123
+        </p>
+      </div>
+      <div
+        className="sc-kDDrLX bbZLZe"
       >
         <div
-          class="sc-jqUVSM ifauud"
+          className="sc-jqUVSM ifauud"
         >
           <p
-            class="sc-gsnTZi sc-gKXOVf FhkDi beJtKk"
+            className="sc-gsnTZi sc-gKXOVf FhkDi beJtKk"
           >
-            Nama Driver
+            Email
           </p>
           <p
-            class="sc-iBkjds kCUvor"
+            className="sc-iBkjds bthwDz"
           >
-            firstName, lastName
+            email@email.com
           </p>
         </div>
         <div
-          class="sc-jqUVSM ifauud"
+          className="sc-jqUVSM ifauud"
         >
           <p
-            class="sc-gsnTZi sc-gKXOVf FhkDi beJtKk"
+            className="sc-gsnTZi sc-gKXOVf FhkDi beJtKk"
           >
-            Telepon
+            Tanggal Lahir
           </p>
           <p
-            class="sc-iBkjds kCUvor"
+            className="sc-iBkjds bthwDz"
           >
-            098123123123
+            12/10/1998
           </p>
-        </div>
-        <div
-          class="sc-kDDrLX bbZLZe"
-        >
-          <div
-            class="sc-jqUVSM ifauud"
-          >
-            <p
-              class="sc-gsnTZi sc-gKXOVf FhkDi beJtKk"
-            >
-              Email
-            </p>
-            <p
-              class="sc-iBkjds kCUvor"
-            >
-              email@email.com
-            </p>
-          </div>
-          <div
-            class="sc-jqUVSM ifauud"
-          >
-            <p
-              class="sc-gsnTZi sc-gKXOVf FhkDi beJtKk"
-            >
-              Tanggal Lahir
-            </p>
-            <p
-              class="sc-iBkjds kCUvor"
-            >
-              12/10/1998
-            </p>
-          </div>
         </div>
       </div>
     </div>
   </div>
-</DocumentFragment>
+</div>
 `;

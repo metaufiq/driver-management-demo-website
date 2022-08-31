@@ -1,34 +1,32 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`TextInputSnapshot should render normal TextInput 1`] = `
-<DocumentFragment>
-  <div
-    class="sc-gsnTZi hEqjwc"
-  >
-    <input
-      class="sc-bczRLJ gBziFm"
-      placeholder="placeholder"
-      type="password"
-    />
-  </div>
-</DocumentFragment>
+<div
+  className="sc-gsnTZi hEqjwc"
+>
+  <input
+    className="sc-bczRLJ gBziFm"
+    onChange={[Function]}
+    placeholder="placeholder"
+    type="password"
+  />
+</div>
 `;
 
 exports[`TextInputSnapshot should render normal TextInput with left icon 1`] = `
-<DocumentFragment>
+<div
+  className="sc-gsnTZi hEqjwc"
+>
   <div
-    class="sc-gsnTZi hEqjwc"
+    className="sc-dkzDqf gZKilg"
   >
-    <div
-      class="sc-dkzDqf gZKilg"
-    >
-      <div />
-    </div>
-    <input
-      class="sc-bczRLJ gBziFm"
-      placeholder="placeholder"
-      type="password"
-    />
+    <div />
   </div>
-</DocumentFragment>
+  <input
+    className="sc-bczRLJ gBziFm"
+    onChange={[Function]}
+    placeholder="placeholder"
+    type="password"
+  />
+</div>
 `;

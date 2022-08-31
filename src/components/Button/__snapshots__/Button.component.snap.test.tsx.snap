@@ -1,33 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`StyledButtonSnapshot should render custom text align button 1`] = `
-<DocumentFragment>
-  <button
-    class="sc-bczRLJ dqWClK"
-  />
-</DocumentFragment>
+<button
+  className="sc-bczRLJ dqWClK"
+/>
 `;
 
 exports[`StyledButtonSnapshot should render normal button 1`] = `
-<DocumentFragment>
-  <button
-    class="sc-bczRLJ jMYSRp"
-  />
-</DocumentFragment>
+<button
+  className="sc-bczRLJ jMYSRp"
+/>
 `;
 
 exports[`StyledButtonSnapshot should render normal navigation button 1`] = `
-<DocumentFragment>
-  <button
-    class="sc-bczRLJ hQcwZr"
-  />
-</DocumentFragment>
+<button
+  className="sc-bczRLJ hQcwZr"
+/>
 `;
 
 exports[`StyledButtonSnapshot should render normal primary button 1`] = `
-<DocumentFragment>
-  <button
-    class="sc-bczRLJ iyjxpd"
-  />
-</DocumentFragment>
+<button
+  className="sc-bczRLJ iyjxpd"
+/>
 `;

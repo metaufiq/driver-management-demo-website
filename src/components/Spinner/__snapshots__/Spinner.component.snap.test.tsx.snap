@@ -1,9 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`SpinnerSnapshot should render normal Spinner 1`] = `
-<DocumentFragment>
-  <div
-    class="sc-bczRLJ iVnQFX"
-  />
-</DocumentFragment>
+<div
+  className="sc-bczRLJ iVnQFX"
+  size="50px"
+/>
 `;

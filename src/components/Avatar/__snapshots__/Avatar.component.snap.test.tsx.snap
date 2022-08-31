@@ -1,10 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`AvatarSnapshot should render normal SeparatorLine 1`] = `
-<DocumentFragment>
-  <img
-    class="sc-bczRLJ hLfesy"
-    src="imageurl"
-  />
-</DocumentFragment>
+<img
+  className="sc-bczRLJ hLfesy"
+  src="imageurl"
+/>
 `;
