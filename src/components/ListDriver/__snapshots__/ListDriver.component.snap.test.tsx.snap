@@ -57,7 +57,7 @@ exports[`ListDriverSnapshot should render normal state list driver 1`] = `
           stroke="currentColor"
           strokeWidth="0"
           style={
-            Object {
+            {
               "color": undefined,
             }
           }

@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`DriverCardSnapshot should render normal driver management page 1`] = `
-Array [
+[
   <div
     className="sc-gsnTZi gWfrLw"
   >
@@ -36,7 +36,7 @@ Array [
           stroke="currentColor"
           strokeWidth="0"
           style={
-            Object {
+            {
               "color": undefined,
             }
           }
@@ -57,8 +57,8 @@ Array [
   <br />,
   <ListDriver
     data={
-      Array [
-        Object {
+      [
+        {
           "key": "example one of users key",
         },
       ]

@@ -28,7 +28,7 @@ exports[`DriverCardSnapshot should render normal driver card 1`] = `
         stroke="currentColor"
         strokeWidth="0"
         style={
-          Object {
+          {
             "color": undefined,
           }
         }
